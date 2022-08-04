@@ -47,10 +47,8 @@ core
 
 lost+found
 
-build/
-install/
-Debug/
-Release/
+.build/
+
 
 .vs/
 *.user
@@ -58,3 +56,5 @@ Release/
 *.dll
 *.lib
 *.obj
+*.log
+*.tlog
