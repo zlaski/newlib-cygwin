@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="categories.c" />
+    <ClCompile Include="ctype_.c" />
+    <ClCompile Include="isalnum.c" />
+    <ClCompile Include="isalnum_l.c" />
+    <ClCompile Include="isalpha.c" />
+    <ClCompile Include="isalpha_l.c" />
+    <ClCompile Include="isascii.c" />
+    <ClCompile Include="isascii_l.c" />
+    <ClCompile Include="isblank.c" />
+    <ClCompile Include="isblank_l.c" />
+    <ClCompile Include="iscntrl.c" />
+    <ClCompile Include="iscntrl_l.c" />
+    <ClCompile Include="isdigit.c" />
+    <ClCompile Include="isdigit_l.c" />
+    <ClCompile Include="islower.c" />
+    <ClCompile Include="islower_l.c" />
+    <ClCompile Include="isprint.c" />
+    <ClCompile Include="isprint_l.c" />
+    <ClCompile Include="ispunct.c" />
+    <ClCompile Include="ispunct_l.c" />
+    <ClCompile Include="isspace.c" />
+    <ClCompile Include="isspace_l.c" />
+    <ClCompile Include="isupper.c" />
+    <ClCompile Include="isupper_l.c" />
+    <ClCompile Include="iswalnum.c" />
+    <ClCompile Include="iswalnum_l.c" />
+    <ClCompile Include="iswalpha.c" />
+    <ClCompile Include="iswalpha_l.c" />
+    <ClCompile Include="iswblank.c" />
+    <ClCompile Include="iswblank_l.c" />
+    <ClCompile Include="iswcntrl.c" />
+    <ClCompile Include="iswcntrl_l.c" />
+    <ClCompile Include="iswctype.c" />
+    <ClCompile Include="iswctype_l.c" />
+    <ClCompile Include="iswdigit.c" />
+    <ClCompile Include="iswdigit_l.c" />
+    <ClCompile Include="iswgraph.c" />
+    <ClCompile Include="iswgraph_l.c" />
+    <ClCompile Include="iswlower.c" />
+    <ClCompile Include="iswlower_l.c" />
+    <ClCompile Include="iswprint.c" />
+    <ClCompile Include="iswprint_l.c" />
+    <ClCompile Include="iswpunct.c" />
+    <ClCompile Include="iswpunct_l.c" />
+    <ClCompile Include="iswspace.c" />
+    <ClCompile Include="iswspace_l.c" />
+    <ClCompile Include="iswupper.c" />
+    <ClCompile Include="iswupper_l.c" />
+    <ClCompile Include="iswxdigit.c" />
+    <ClCompile Include="iswxdigit_l.c" />
+    <ClCompile Include="isxdigit.c" />
+    <ClCompile Include="isxdigit_l.c" />
+    <ClCompile Include="jp2uc.c" />
+    <ClCompile Include="toascii.c" />
+    <ClCompile Include="toascii_l.c" />
+    <ClCompile Include="tolower.c" />
+    <ClCompile Include="tolower_l.c" />
+    <ClCompile Include="toupper.c" />
+    <ClCompile Include="toupper_l.c" />
+    <ClCompile Include="towctrans.c" />
+    <ClCompile Include="towctrans_l.c" />
+    <ClCompile Include="towlower.c" />
+    <ClCompile Include="towlower_l.c" />
+    <ClCompile Include="towupper.c" />
+    <ClCompile Include="towupper_l.c" />
+    <ClCompile Include="wctrans.c" />
+    <ClCompile Include="wctrans_l.c" />
+    <ClCompile Include="wctype.c" />
+    <ClCompile Include="wctype_l.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="categories.h" />
+    <ClInclude Include="ctype_.h" />
+    <ClInclude Include="ctype_cp.h" />
+    <ClInclude Include="ctype_iso.h" />
+    <ClInclude Include="jp2uc.h" />
+    <ClInclude Include="local.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{AC7B4730-7955-41CB-9D9E-3FC3A24C24B6}</ProjectGuid>
+    <RootNamespace>libgmon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

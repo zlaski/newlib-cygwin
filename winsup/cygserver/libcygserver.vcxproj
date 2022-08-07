@@ -18,6 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cygwin\lib\liblib.vcxproj">
+      <Project>{490836c3-5827-478e-9a40-487081cb406b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bsd_helper.cc" />
+    <ClCompile Include="bsd_log.cc" />
+    <ClCompile Include="bsd_mutex.cc" />
+    <ClCompile Include="client.cc" />
+    <ClCompile Include="msg.cc" />
+    <ClCompile Include="process.cc" />
+    <ClCompile Include="pwdgrp.cc" />
+    <ClCompile Include="sem.cc" />
+    <ClCompile Include="setpwd.cc" />
+    <ClCompile Include="shm.cc" />
+    <ClCompile Include="sysv_msg.cc" />
+    <ClCompile Include="sysv_sem.cc" />
+    <ClCompile Include="sysv_shm.cc" />
+    <ClCompile Include="threaded_queue.cc" />
+    <ClCompile Include="transport.cc" />
+    <ClCompile Include="transport_pipes.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bsd_helper.h" />
+    <ClInclude Include="bsd_log.h" />
+    <ClInclude Include="bsd_mutex.h" />
+    <ClInclude Include="process.h" />
+    <ClInclude Include="threaded_queue.h" />
+    <ClInclude Include="transport.h" />
+    <ClInclude Include="transport_pipes.h" />
+    <ClInclude Include="woutsup.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -28,6 +61,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,7 +76,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -64,6 +97,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

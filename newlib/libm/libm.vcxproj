@@ -18,6 +18,443 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\acoshl.c" />
+    <ClCompile Include="common\acosl.c" />
+    <ClCompile Include="common\asinhl.c" />
+    <ClCompile Include="common\asinl.c" />
+    <ClCompile Include="common\atan2l.c" />
+    <ClCompile Include="common\atanhl.c" />
+    <ClCompile Include="common\atanl.c" />
+    <ClCompile Include="common\cbrtl.c" />
+    <ClCompile Include="common\ceill.c" />
+    <ClCompile Include="common\copysignl.c" />
+    <ClCompile Include="common\cosf.c" />
+    <ClCompile Include="common\coshl.c" />
+    <ClCompile Include="common\cosl.c" />
+    <ClCompile Include="common\erfcl.c" />
+    <ClCompile Include="common\erfl.c" />
+    <ClCompile Include="common\exp.c" />
+    <ClCompile Include="common\exp2.c" />
+    <ClCompile Include="common\exp2l.c" />
+    <ClCompile Include="common\expl.c" />
+    <ClCompile Include="common\expm1l.c" />
+    <ClCompile Include="common\exp_data.c" />
+    <ClCompile Include="common\fabsl.c" />
+    <ClCompile Include="common\fdiml.c" />
+    <ClCompile Include="common\floorl.c" />
+    <ClCompile Include="common\fmal.c" />
+    <ClCompile Include="common\fmaxl.c" />
+    <ClCompile Include="common\fminl.c" />
+    <ClCompile Include="common\fmodl.c" />
+    <ClCompile Include="common\frexpl.c" />
+    <ClCompile Include="common\hypotl.c" />
+    <ClCompile Include="common\ilogbl.c" />
+    <ClCompile Include="common\isgreater.c" />
+    <ClCompile Include="common\ldexpl.c" />
+    <ClCompile Include="common\lgammal.c" />
+    <ClCompile Include="common\llrintl.c" />
+    <ClCompile Include="common\llroundl.c" />
+    <ClCompile Include="common\log.c" />
+    <ClCompile Include="common\log10l.c" />
+    <ClCompile Include="common\log1pl.c" />
+    <ClCompile Include="common\log2.c" />
+    <ClCompile Include="common\log2l.c" />
+    <ClCompile Include="common\log2_data.c" />
+    <ClCompile Include="common\logbl.c" />
+    <ClCompile Include="common\logl.c" />
+    <ClCompile Include="common\log_data.c" />
+    <ClCompile Include="common\lrintl.c" />
+    <ClCompile Include="common\lroundl.c" />
+    <ClCompile Include="common\math_err.c" />
+    <ClCompile Include="common\math_errf.c" />
+    <ClCompile Include="common\modfl.c" />
+    <ClCompile Include="common\nanl.c" />
+    <ClCompile Include="common\nearbyintl.c" />
+    <ClCompile Include="common\nextafterl.c" />
+    <ClCompile Include="common\nexttoward.c" />
+    <ClCompile Include="common\nexttowardf.c" />
+    <ClCompile Include="common\nexttowardl.c" />
+    <ClCompile Include="common\pow.c" />
+    <ClCompile Include="common\powl.c" />
+    <ClCompile Include="common\pow_log_data.c" />
+    <ClCompile Include="common\remainderl.c" />
+    <ClCompile Include="common\remquol.c" />
+    <ClCompile Include="common\rintl.c" />
+    <ClCompile Include="common\roundl.c" />
+    <ClCompile Include="common\scalblnl.c" />
+    <ClCompile Include="common\scalbnl.c" />
+    <ClCompile Include="common\sf_cbrt.c" />
+    <ClCompile Include="common\sf_copysign.c" />
+    <ClCompile Include="common\sf_exp.c" />
+    <ClCompile Include="common\sf_exp10.c" />
+    <ClCompile Include="common\sf_exp2.c" />
+    <ClCompile Include="common\sf_exp2_data.c" />
+    <ClCompile Include="common\sf_expm1.c" />
+    <ClCompile Include="common\sf_fdim.c" />
+    <ClCompile Include="common\sf_finite.c" />
+    <ClCompile Include="common\sf_fma.c" />
+    <ClCompile Include="common\sf_fmax.c" />
+    <ClCompile Include="common\sf_fmin.c" />
+    <ClCompile Include="common\sf_fpclassify.c" />
+    <ClCompile Include="common\sf_ilogb.c" />
+    <ClCompile Include="common\sf_infinity.c" />
+    <ClCompile Include="common\sf_isinf.c" />
+    <ClCompile Include="common\sf_isinff.c" />
+    <ClCompile Include="common\sf_isnan.c" />
+    <ClCompile Include="common\sf_isnanf.c" />
+    <ClCompile Include="common\sf_llrint.c" />
+    <ClCompile Include="common\sf_llround.c" />
+    <ClCompile Include="common\sf_log.c" />
+    <ClCompile Include="common\sf_log1p.c" />
+    <ClCompile Include="common\sf_log2.c" />
+    <ClCompile Include="common\sf_log2_data.c" />
+    <ClCompile Include="common\sf_logb.c" />
+    <ClCompile Include="common\sf_log_data.c" />
+    <ClCompile Include="common\sf_lrint.c" />
+    <ClCompile Include="common\sf_lround.c" />
+    <ClCompile Include="common\sf_modf.c" />
+    <ClCompile Include="common\sf_nan.c" />
+    <ClCompile Include="common\sf_nearbyint.c" />
+    <ClCompile Include="common\sf_nextafter.c" />
+    <ClCompile Include="common\sf_pow.c" />
+    <ClCompile Include="common\sf_pow10.c" />
+    <ClCompile Include="common\sf_pow_log2_data.c" />
+    <ClCompile Include="common\sf_remquo.c" />
+    <ClCompile Include="common\sf_rint.c" />
+    <ClCompile Include="common\sf_round.c" />
+    <ClCompile Include="common\sf_scalbln.c" />
+    <ClCompile Include="common\sf_scalbn.c" />
+    <ClCompile Include="common\sf_trunc.c" />
+    <ClCompile Include="common\sincosf.c" />
+    <ClCompile Include="common\sincosf_data.c" />
+    <ClCompile Include="common\sinf.c" />
+    <ClCompile Include="common\sinhl.c" />
+    <ClCompile Include="common\sinl.c" />
+    <ClCompile Include="common\sl_finite.c" />
+    <ClCompile Include="common\sqrtl.c" />
+    <ClCompile Include="common\s_cbrt.c" />
+    <ClCompile Include="common\s_copysign.c" />
+    <ClCompile Include="common\s_exp10.c" />
+    <ClCompile Include="common\s_expm1.c" />
+    <ClCompile Include="common\s_fdim.c" />
+    <ClCompile Include="common\s_finite.c" />
+    <ClCompile Include="common\s_fma.c" />
+    <ClCompile Include="common\s_fmax.c" />
+    <ClCompile Include="common\s_fmin.c" />
+    <ClCompile Include="common\s_fpclassify.c" />
+    <ClCompile Include="common\s_ilogb.c" />
+    <ClCompile Include="common\s_infinity.c" />
+    <ClCompile Include="common\s_isinf.c" />
+    <ClCompile Include="common\s_isinfd.c" />
+    <ClCompile Include="common\s_isnan.c" />
+    <ClCompile Include="common\s_isnand.c" />
+    <ClCompile Include="common\s_llrint.c" />
+    <ClCompile Include="common\s_llround.c" />
+    <ClCompile Include="common\s_log1p.c" />
+    <ClCompile Include="common\s_log2.c" />
+    <ClCompile Include="common\s_logb.c" />
+    <ClCompile Include="common\s_lrint.c" />
+    <ClCompile Include="common\s_lround.c" />
+    <ClCompile Include="common\s_modf.c" />
+    <ClCompile Include="common\s_nan.c" />
+    <ClCompile Include="common\s_nearbyint.c" />
+    <ClCompile Include="common\s_nextafter.c" />
+    <ClCompile Include="common\s_pow10.c" />
+    <ClCompile Include="common\s_remquo.c" />
+    <ClCompile Include="common\s_rint.c" />
+    <ClCompile Include="common\s_round.c" />
+    <ClCompile Include="common\s_scalbln.c" />
+    <ClCompile Include="common\s_scalbn.c" />
+    <ClCompile Include="common\s_signbit.c" />
+    <ClCompile Include="common\s_trunc.c" />
+    <ClCompile Include="common\tanhl.c" />
+    <ClCompile Include="common\tanl.c" />
+    <ClCompile Include="common\tgammal.c" />
+    <ClCompile Include="common\truncl.c" />
+    <ClCompile Include="complex\cabs.c" />
+    <ClCompile Include="complex\cabsf.c" />
+    <ClCompile Include="complex\cabsl.c" />
+    <ClCompile Include="complex\cacos.c" />
+    <ClCompile Include="complex\cacosf.c" />
+    <ClCompile Include="complex\cacosh.c" />
+    <ClCompile Include="complex\cacoshf.c" />
+    <ClCompile Include="complex\cacoshl.c" />
+    <ClCompile Include="complex\cacosl.c" />
+    <ClCompile Include="complex\carg.c" />
+    <ClCompile Include="complex\cargf.c" />
+    <ClCompile Include="complex\cargl.c" />
+    <ClCompile Include="complex\casin.c" />
+    <ClCompile Include="complex\casinf.c" />
+    <ClCompile Include="complex\casinh.c" />
+    <ClCompile Include="complex\casinhf.c" />
+    <ClCompile Include="complex\casinhl.c" />
+    <ClCompile Include="complex\casinl.c" />
+    <ClCompile Include="complex\catan.c" />
+    <ClCompile Include="complex\catanf.c" />
+    <ClCompile Include="complex\catanh.c" />
+    <ClCompile Include="complex\catanhf.c" />
+    <ClCompile Include="complex\catanhl.c" />
+    <ClCompile Include="complex\catanl.c" />
+    <ClCompile Include="complex\ccos.c" />
+    <ClCompile Include="complex\ccosf.c" />
+    <ClCompile Include="complex\ccosh.c" />
+    <ClCompile Include="complex\ccoshf.c" />
+    <ClCompile Include="complex\ccoshl.c" />
+    <ClCompile Include="complex\ccosl.c" />
+    <ClCompile Include="complex\cephes_subr.c" />
+    <ClCompile Include="complex\cephes_subrf.c" />
+    <ClCompile Include="complex\cephes_subrl.c" />
+    <ClCompile Include="complex\cexp.c" />
+    <ClCompile Include="complex\cexpf.c" />
+    <ClCompile Include="complex\cexpl.c" />
+    <ClCompile Include="complex\cimag.c" />
+    <ClCompile Include="complex\cimagf.c" />
+    <ClCompile Include="complex\cimagl.c" />
+    <ClCompile Include="complex\clog.c" />
+    <ClCompile Include="complex\clog10.c" />
+    <ClCompile Include="complex\clog10f.c" />
+    <ClCompile Include="complex\clogf.c" />
+    <ClCompile Include="complex\clogl.c" />
+    <ClCompile Include="complex\conj.c" />
+    <ClCompile Include="complex\conjf.c" />
+    <ClCompile Include="complex\conjl.c" />
+    <ClCompile Include="complex\cpow.c" />
+    <ClCompile Include="complex\cpowf.c" />
+    <ClCompile Include="complex\cpowl.c" />
+    <ClCompile Include="complex\cproj.c" />
+    <ClCompile Include="complex\cprojf.c" />
+    <ClCompile Include="complex\cprojl.c" />
+    <ClCompile Include="complex\creal.c" />
+    <ClCompile Include="complex\crealf.c" />
+    <ClCompile Include="complex\creall.c" />
+    <ClCompile Include="complex\csin.c" />
+    <ClCompile Include="complex\csinf.c" />
+    <ClCompile Include="complex\csinh.c" />
+    <ClCompile Include="complex\csinhf.c" />
+    <ClCompile Include="complex\csinhl.c" />
+    <ClCompile Include="complex\csinl.c" />
+    <ClCompile Include="complex\csqrt.c" />
+    <ClCompile Include="complex\csqrtf.c" />
+    <ClCompile Include="complex\csqrtl.c" />
+    <ClCompile Include="complex\ctan.c" />
+    <ClCompile Include="complex\ctanf.c" />
+    <ClCompile Include="complex\ctanh.c" />
+    <ClCompile Include="complex\ctanhf.c" />
+    <ClCompile Include="complex\ctanhl.c" />
+    <ClCompile Include="complex\ctanl.c" />
+    <ClCompile Include="fenv\feclearexcept.c" />
+    <ClCompile Include="fenv\fegetenv.c" />
+    <ClCompile Include="fenv\fegetexceptflag.c" />
+    <ClCompile Include="fenv\fegetround.c" />
+    <ClCompile Include="fenv\feholdexcept.c" />
+    <ClCompile Include="fenv\fenv_stub.c" />
+    <ClCompile Include="fenv\feraiseexcept.c" />
+    <ClCompile Include="fenv\fesetenv.c" />
+    <ClCompile Include="fenv\fesetexceptflag.c" />
+    <ClCompile Include="fenv\fesetround.c" />
+    <ClCompile Include="fenv\fetestexcept.c" />
+    <ClCompile Include="fenv\feupdateenv.c" />
+    <ClCompile Include="fenv\fe_dfl_env.c" />
+    <ClCompile Include="machine\i386\feclearexcept.c" />
+    <ClCompile Include="machine\i386\fegetenv.c" />
+    <ClCompile Include="machine\i386\fegetexceptflag.c" />
+    <ClCompile Include="machine\i386\fegetround.c" />
+    <ClCompile Include="machine\i386\feholdexcept.c" />
+    <ClCompile Include="machine\i386\fenv.c" />
+    <ClCompile Include="machine\i386\feraiseexcept.c" />
+    <ClCompile Include="machine\i386\fesetenv.c" />
+    <ClCompile Include="machine\i386\fesetexceptflag.c" />
+    <ClCompile Include="machine\i386\fesetround.c" />
+    <ClCompile Include="machine\i386\fetestexcept.c" />
+    <ClCompile Include="machine\i386\feupdateenv.c" />
+    <ClCompile Include="machine\i386\f_exp.c" />
+    <ClCompile Include="machine\i386\f_expf.c" />
+    <ClCompile Include="machine\i386\f_llrint.c" />
+    <ClCompile Include="machine\i386\f_llrintf.c" />
+    <ClCompile Include="machine\i386\f_llrintl.c" />
+    <ClCompile Include="machine\i386\f_lrint.c" />
+    <ClCompile Include="machine\i386\f_lrintf.c" />
+    <ClCompile Include="machine\i386\f_lrintl.c" />
+    <ClCompile Include="machine\i386\f_pow.c" />
+    <ClCompile Include="machine\i386\f_powf.c" />
+    <ClCompile Include="machine\i386\f_rint.c" />
+    <ClCompile Include="machine\i386\f_rintf.c" />
+    <ClCompile Include="machine\i386\f_rintl.c" />
+    <ClCompile Include="machine\x86_64\feclearexcept.c" />
+    <ClCompile Include="machine\x86_64\fegetenv.c" />
+    <ClCompile Include="machine\x86_64\fegetexceptflag.c" />
+    <ClCompile Include="machine\x86_64\fegetround.c" />
+    <ClCompile Include="machine\x86_64\feholdexcept.c" />
+    <ClCompile Include="machine\x86_64\fenv.c" />
+    <ClCompile Include="machine\x86_64\feraiseexcept.c" />
+    <ClCompile Include="machine\x86_64\fesetenv.c" />
+    <ClCompile Include="machine\x86_64\fesetexceptflag.c" />
+    <ClCompile Include="machine\x86_64\fesetround.c" />
+    <ClCompile Include="machine\x86_64\fetestexcept.c" />
+    <ClCompile Include="machine\x86_64\feupdateenv.c" />
+    <ClCompile Include="math\ef_acos.c" />
+    <ClCompile Include="math\ef_acosh.c" />
+    <ClCompile Include="math\ef_asin.c" />
+    <ClCompile Include="math\ef_atan2.c" />
+    <ClCompile Include="math\ef_atanh.c" />
+    <ClCompile Include="math\ef_cosh.c" />
+    <ClCompile Include="math\ef_exp.c" />
+    <ClCompile Include="math\ef_fmod.c" />
+    <ClCompile Include="math\ef_hypot.c" />
+    <ClCompile Include="math\ef_j0.c" />
+    <ClCompile Include="math\ef_j1.c" />
+    <ClCompile Include="math\ef_jn.c" />
+    <ClCompile Include="math\ef_log.c" />
+    <ClCompile Include="math\ef_log10.c" />
+    <ClCompile Include="math\ef_pow.c" />
+    <ClCompile Include="math\ef_remainder.c" />
+    <ClCompile Include="math\ef_rem_pio2.c" />
+    <ClCompile Include="math\ef_scalb.c" />
+    <ClCompile Include="math\ef_sinh.c" />
+    <ClCompile Include="math\ef_sqrt.c" />
+    <ClCompile Include="math\ef_tgamma.c" />
+    <ClCompile Include="math\el_hypot.c" />
+    <ClCompile Include="math\erf_lgamma.c" />
+    <ClCompile Include="math\er_lgamma.c" />
+    <ClCompile Include="math\e_acos.c" />
+    <ClCompile Include="math\e_acosh.c" />
+    <ClCompile Include="math\e_asin.c" />
+    <ClCompile Include="math\e_atan2.c" />
+    <ClCompile Include="math\e_atanh.c" />
+    <ClCompile Include="math\e_cosh.c" />
+    <ClCompile Include="math\e_exp.c" />
+    <ClCompile Include="math\e_fmod.c" />
+    <ClCompile Include="math\e_hypot.c" />
+    <ClCompile Include="math\e_j0.c" />
+    <ClCompile Include="math\e_j1.c" />
+    <ClCompile Include="math\e_jn.c" />
+    <ClCompile Include="math\e_log.c" />
+    <ClCompile Include="math\e_log10.c" />
+    <ClCompile Include="math\e_pow.c" />
+    <ClCompile Include="math\e_remainder.c" />
+    <ClCompile Include="math\e_rem_pio2.c" />
+    <ClCompile Include="math\e_scalb.c" />
+    <ClCompile Include="math\e_sinh.c" />
+    <ClCompile Include="math\e_sqrt.c" />
+    <ClCompile Include="math\e_tgamma.c" />
+    <ClCompile Include="math\kf_cos.c" />
+    <ClCompile Include="math\kf_rem_pio2.c" />
+    <ClCompile Include="math\kf_sin.c" />
+    <ClCompile Include="math\kf_tan.c" />
+    <ClCompile Include="math\k_cos.c" />
+    <ClCompile Include="math\k_rem_pio2.c" />
+    <ClCompile Include="math\k_sin.c" />
+    <ClCompile Include="math\k_standard.c" />
+    <ClCompile Include="math\k_tan.c" />
+    <ClCompile Include="math\sf_asinh.c" />
+    <ClCompile Include="math\sf_atan.c" />
+    <ClCompile Include="math\sf_ceil.c" />
+    <ClCompile Include="math\sf_cos.c" />
+    <ClCompile Include="math\sf_erf.c" />
+    <ClCompile Include="math\sf_fabs.c" />
+    <ClCompile Include="math\sf_floor.c" />
+    <ClCompile Include="math\sf_frexp.c" />
+    <ClCompile Include="math\sf_ldexp.c" />
+    <ClCompile Include="math\sf_signif.c" />
+    <ClCompile Include="math\sf_sin.c" />
+    <ClCompile Include="math\sf_tan.c" />
+    <ClCompile Include="math\sf_tanh.c" />
+    <ClCompile Include="math\s_asinh.c" />
+    <ClCompile Include="math\s_atan.c" />
+    <ClCompile Include="math\s_ceil.c" />
+    <ClCompile Include="math\s_cos.c" />
+    <ClCompile Include="math\s_erf.c" />
+    <ClCompile Include="math\s_fabs.c" />
+    <ClCompile Include="math\s_floor.c" />
+    <ClCompile Include="math\s_frexp.c" />
+    <ClCompile Include="math\s_ldexp.c" />
+    <ClCompile Include="math\s_signif.c" />
+    <ClCompile Include="math\s_sin.c" />
+    <ClCompile Include="math\s_tan.c" />
+    <ClCompile Include="math\s_tanh.c" />
+    <ClCompile Include="math\wf_acos.c" />
+    <ClCompile Include="math\wf_acosh.c" />
+    <ClCompile Include="math\wf_asin.c" />
+    <ClCompile Include="math\wf_atan2.c" />
+    <ClCompile Include="math\wf_atanh.c" />
+    <ClCompile Include="math\wf_cosh.c" />
+    <ClCompile Include="math\wf_drem.c" />
+    <ClCompile Include="math\wf_exp.c" />
+    <ClCompile Include="math\wf_exp2.c" />
+    <ClCompile Include="math\wf_fmod.c" />
+    <ClCompile Include="math\wf_gamma.c" />
+    <ClCompile Include="math\wf_hypot.c" />
+    <ClCompile Include="math\wf_j0.c" />
+    <ClCompile Include="math\wf_j1.c" />
+    <ClCompile Include="math\wf_jn.c" />
+    <ClCompile Include="math\wf_lgamma.c" />
+    <ClCompile Include="math\wf_log.c" />
+    <ClCompile Include="math\wf_log10.c" />
+    <ClCompile Include="math\wf_log2.c" />
+    <ClCompile Include="math\wf_pow.c" />
+    <ClCompile Include="math\wf_remainder.c" />
+    <ClCompile Include="math\wf_scalb.c" />
+    <ClCompile Include="math\wf_sincos.c" />
+    <ClCompile Include="math\wf_sinh.c" />
+    <ClCompile Include="math\wf_sqrt.c" />
+    <ClCompile Include="math\wf_tgamma.c" />
+    <ClCompile Include="math\wrf_gamma.c" />
+    <ClCompile Include="math\wrf_lgamma.c" />
+    <ClCompile Include="math\wr_gamma.c" />
+    <ClCompile Include="math\wr_lgamma.c" />
+    <ClCompile Include="math\w_acos.c" />
+    <ClCompile Include="math\w_acosh.c" />
+    <ClCompile Include="math\w_asin.c" />
+    <ClCompile Include="math\w_atan2.c" />
+    <ClCompile Include="math\w_atanh.c" />
+    <ClCompile Include="math\w_cosh.c" />
+    <ClCompile Include="math\w_drem.c" />
+    <ClCompile Include="math\w_exp.c" />
+    <ClCompile Include="math\w_exp2.c" />
+    <ClCompile Include="math\w_fmod.c" />
+    <ClCompile Include="math\w_gamma.c" />
+    <ClCompile Include="math\w_hypot.c" />
+    <ClCompile Include="math\w_j0.c" />
+    <ClCompile Include="math\w_j1.c" />
+    <ClCompile Include="math\w_jn.c" />
+    <ClCompile Include="math\w_lgamma.c" />
+    <ClCompile Include="math\w_log.c" />
+    <ClCompile Include="math\w_log10.c" />
+    <ClCompile Include="math\w_pow.c" />
+    <ClCompile Include="math\w_remainder.c" />
+    <ClCompile Include="math\w_scalb.c" />
+    <ClCompile Include="math\w_sincos.c" />
+    <ClCompile Include="math\w_sinh.c" />
+    <ClCompile Include="math\w_sqrt.c" />
+    <ClCompile Include="math\w_tgamma.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\fdlibm.h" />
+    <ClInclude Include="common\local.h" />
+    <ClInclude Include="common\math_config.h" />
+    <ClInclude Include="common\sincosf.h" />
+    <ClInclude Include="complex\cephes_subr.h" />
+    <ClInclude Include="complex\cephes_subrf.h" />
+    <ClInclude Include="complex\cephes_subrl.h" />
+    <ClInclude Include="machine\i386\f_math.h" />
+    <ClInclude Include="machine\i386\i386mach.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="complex\complex.tex" />
+    <None Include="machine\i386\f_atan2.S" />
+    <None Include="machine\i386\f_atan2f.S" />
+    <None Include="machine\i386\f_frexp.S" />
+    <None Include="machine\i386\f_frexpf.S" />
+    <None Include="machine\i386\f_ldexp.S" />
+    <None Include="machine\i386\f_ldexpf.S" />
+    <None Include="machine\i386\f_log.S" />
+    <None Include="machine\i386\f_log10.S" />
+    <None Include="machine\i386\f_log10f.S" />
+    <None Include="machine\i386\f_logf.S" />
+    <None Include="machine\i386\f_tan.S" />
+    <None Include="machine\i386\f_tanf.S" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -28,6 +465,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,7 +480,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -64,6 +501,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

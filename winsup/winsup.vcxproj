@@ -43,6 +43,15 @@
     <ProjectReference Include="cygwin\libtextreadmode.vcxproj">
       <Project>{ba10e609-59b3-48e5-a259-d100afab31f5}</Project>
     </ProjectReference>
+    <ProjectReference Include="cygwin\math\libmath.vcxproj">
+      <Project>{0a975c05-ac55-4328-946c-d89aa6e98a45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="cygwin\regex\libregex.vcxproj">
+      <Project>{283932ea-6be0-49f3-88d1-2e278feeaddb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="cygwin\tzcode\libtzcode.vcxproj">
+      <Project>{6f8ee20a-0f61-44dd-9306-0c48f9c32e2c}</Project>
+    </ProjectReference>
     <ProjectReference Include="testsuite\libltp\libltp.vcxproj">
       <Project>{0ed379cf-649b-4bc8-b0b3-87a7a1b6679c}</Project>
     </ProjectReference>
@@ -57,6 +66,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -71,7 +81,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -93,6 +102,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

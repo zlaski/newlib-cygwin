@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="_cygwin_crt0_common.cc" />
+    <ClCompile Include="atexit.c" />
+    <ClCompile Include="cygwin_attach_dll.c" />
+    <ClCompile Include="cygwin_crt0.c" />
+    <ClCompile Include="dll_entry.c" />
+    <ClCompile Include="dll_main.cc" />
+    <ClCompile Include="dso_handle.c" />
+    <ClCompile Include="libcmain.c" />
+    <ClCompile Include="premain0.c" />
+    <ClCompile Include="premain1.c" />
+    <ClCompile Include="premain2.c" />
+    <ClCompile Include="premain3.c" />
+    <ClCompile Include="pseudo-reloc-dummy.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crt0.h" />
+  </ItemGroup>
+</Project>

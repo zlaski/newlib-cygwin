@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="i386">
+      <UniqueIdentifier>{2d10f91d-ae9e-4f44-a7fc-e134b04ef1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared_x86">
+      <UniqueIdentifier>{fc27ac66-24d0-4566-9e70-c551db953709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x86_64">
+      <UniqueIdentifier>{8cceb677-7114-4a53-87be-043523c0c104}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="i386\i386mach.h">
+      <Filter>i386</Filter>
+    </ClInclude>
+    <ClInclude Include="i386\machine\fastmath.h">
+      <Filter>i386</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_x86\sys\fenv.h">
+      <Filter>shared_x86</Filter>
+    </ClInclude>
+    <ClInclude Include="x86_64\x86_64mach.h">
+      <Filter>x86_64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="i386\memchr.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\memcmp.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\memcpy.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\memmove.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\memset.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\setjmp.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\strchr.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="i386\strlen.S">
+      <Filter>i386</Filter>
+    </None>
+    <None Include="x86_64\memcpy.S">
+      <Filter>x86_64</Filter>
+    </None>
+    <None Include="x86_64\memset.S">
+      <Filter>x86_64</Filter>
+    </None>
+    <None Include="x86_64\setjmp.S">
+      <Filter>x86_64</Filter>
+    </None>
+  </ItemGroup>
+</Project>

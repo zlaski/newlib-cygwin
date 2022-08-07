@@ -18,6 +18,62 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="argz\libargz.vcxproj">
+      <Project>{a5aa4368-1b16-4b99-92d5-03264a9f9327}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ctype\libctype.vcxproj">
+      <Project>{ac7b4730-7955-41cb-9d9e-3fc3a24c24b6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="locale\liblocale.vcxproj">
+      <Project>{ae2ce3b7-40bc-4d99-ac52-260d42b27eef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="machine\libmachine.vcxproj">
+      <Project>{fe55abcb-99af-47c1-bb41-1d664d6d53d5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="misc\libmisc.vcxproj">
+      <Project>{7931494a-d86d-4f5b-b130-f8c8f790b35b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="posix\libposix.vcxproj">
+      <Project>{4c532113-a071-4e4d-87f6-6f5e06d2065f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="reent\libreent.vcxproj">
+      <Project>{275b4010-c09a-4908-98fe-849fe18c0505}</Project>
+    </ProjectReference>
+    <ProjectReference Include="search\libsearch.vcxproj">
+      <Project>{cedb51eb-ba07-4c9b-9a73-f461399e6333}</Project>
+    </ProjectReference>
+    <ProjectReference Include="signal\libsignal.vcxproj">
+      <Project>{d36900d3-1de1-436d-8f20-511c02fd7043}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ssp\libssp.vcxproj">
+      <Project>{cc4b9d55-7671-410c-a554-9dbe04705387}</Project>
+    </ProjectReference>
+    <ProjectReference Include="stdio64\libstdio64.vcxproj">
+      <Project>{278a2820-0652-4916-bde7-6e53d37cd799}</Project>
+    </ProjectReference>
+    <ProjectReference Include="stdio\libstdio.vcxproj">
+      <Project>{5709b425-0934-4746-aa85-451e2ba533bb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="stdlib\libstdlib.vcxproj">
+      <Project>{3ddc71bc-3e90-41e4-9709-78b2b3e18080}</Project>
+    </ProjectReference>
+    <ProjectReference Include="string\libstring.vcxproj">
+      <Project>{f274c116-8f08-41c2-b1eb-c324cf0db7cb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="syscalls\libsyscalls.vcxproj">
+      <Project>{0c01195b-d41f-4d19-afab-b9c68f1427e2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="time\libtime.vcxproj">
+      <Project>{280118ff-898b-4ac7-ab32-4186a242482a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xdr\libxdr.vcxproj">
+      <Project>{56b533a0-7afa-4616-9937-7459cad0d753}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="errno\errno.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -28,6 +84,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,7 +99,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -64,6 +120,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

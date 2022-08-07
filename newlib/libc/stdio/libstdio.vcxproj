@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asiprintf.c" />
+    <ClCompile Include="asniprintf.c" />
+    <ClCompile Include="asnprintf.c" />
+    <ClCompile Include="asprintf.c" />
+    <ClCompile Include="clearerr.c" />
+    <ClCompile Include="clearerr_u.c" />
+    <ClCompile Include="diprintf.c" />
+    <ClCompile Include="dprintf.c" />
+    <ClCompile Include="fclose.c" />
+    <ClCompile Include="fcloseall.c" />
+    <ClCompile Include="fdopen.c" />
+    <ClCompile Include="feof.c" />
+    <ClCompile Include="feof_u.c" />
+    <ClCompile Include="ferror.c" />
+    <ClCompile Include="ferror_u.c" />
+    <ClCompile Include="fflush.c" />
+    <ClCompile Include="fflush_u.c" />
+    <ClCompile Include="fgetc.c" />
+    <ClCompile Include="fgetc_u.c" />
+    <ClCompile Include="fgetpos.c" />
+    <ClCompile Include="fgets.c" />
+    <ClCompile Include="fgets_u.c" />
+    <ClCompile Include="fgetwc.c" />
+    <ClCompile Include="fgetwc_u.c" />
+    <ClCompile Include="fgetws.c" />
+    <ClCompile Include="fgetws_u.c" />
+    <ClCompile Include="fileno.c" />
+    <ClCompile Include="fileno_u.c" />
+    <ClCompile Include="findfp.c" />
+    <ClCompile Include="fiprintf.c" />
+    <ClCompile Include="fiscanf.c" />
+    <ClCompile Include="flags.c" />
+    <ClCompile Include="fmemopen.c" />
+    <ClCompile Include="fopen.c" />
+    <ClCompile Include="fopencookie.c" />
+    <ClCompile Include="fprintf.c" />
+    <ClCompile Include="fpurge.c" />
+    <ClCompile Include="fputc.c" />
+    <ClCompile Include="fputc_u.c" />
+    <ClCompile Include="fputs.c" />
+    <ClCompile Include="fputs_u.c" />
+    <ClCompile Include="fputwc.c" />
+    <ClCompile Include="fputwc_u.c" />
+    <ClCompile Include="fputws.c" />
+    <ClCompile Include="fputws_u.c" />
+    <ClCompile Include="fread.c" />
+    <ClCompile Include="fread_u.c" />
+    <ClCompile Include="freopen.c" />
+    <ClCompile Include="fscanf.c" />
+    <ClCompile Include="fseek.c" />
+    <ClCompile Include="fseeko.c" />
+    <ClCompile Include="fsetlocking.c" />
+    <ClCompile Include="fsetpos.c" />
+    <ClCompile Include="ftell.c" />
+    <ClCompile Include="ftello.c" />
+    <ClCompile Include="funopen.c" />
+    <ClCompile Include="fvwrite.c" />
+    <ClCompile Include="fwalk.c" />
+    <ClCompile Include="fwide.c" />
+    <ClCompile Include="fwprintf.c" />
+    <ClCompile Include="fwrite.c" />
+    <ClCompile Include="fwrite_u.c" />
+    <ClCompile Include="fwscanf.c" />
+    <ClCompile Include="getc.c" />
+    <ClCompile Include="getchar.c" />
+    <ClCompile Include="getchar_u.c" />
+    <ClCompile Include="getc_u.c" />
+    <ClCompile Include="getdelim.c" />
+    <ClCompile Include="getline.c" />
+    <ClCompile Include="gets.c" />
+    <ClCompile Include="getw.c" />
+    <ClCompile Include="getwc.c" />
+    <ClCompile Include="getwchar.c" />
+    <ClCompile Include="getwchar_u.c" />
+    <ClCompile Include="getwc_u.c" />
+    <ClCompile Include="iprintf.c" />
+    <ClCompile Include="iscanf.c" />
+    <ClCompile Include="makebuf.c" />
+    <ClCompile Include="mktemp.c" />
+    <ClCompile Include="nano-svfprintf.c" />
+    <ClCompile Include="nano-svfscanf.c" />
+    <ClCompile Include="nano-vfprintf.c" />
+    <ClCompile Include="nano-vfprintf_float.c" />
+    <ClCompile Include="nano-vfprintf_i.c" />
+    <ClCompile Include="nano-vfscanf.c" />
+    <ClCompile Include="nano-vfscanf_float.c" />
+    <ClCompile Include="nano-vfscanf_i.c" />
+    <ClCompile Include="open_memstream.c" />
+    <ClCompile Include="perror.c" />
+    <ClCompile Include="printf.c" />
+    <ClCompile Include="putc.c" />
+    <ClCompile Include="putchar.c" />
+    <ClCompile Include="putchar_u.c" />
+    <ClCompile Include="putc_u.c" />
+    <ClCompile Include="puts.c" />
+    <ClCompile Include="putw.c" />
+    <ClCompile Include="putwc.c" />
+    <ClCompile Include="putwchar.c" />
+    <ClCompile Include="putwchar_u.c" />
+    <ClCompile Include="putwc_u.c" />
+    <ClCompile Include="refill.c" />
+    <ClCompile Include="remove.c" />
+    <ClCompile Include="rename.c" />
+    <ClCompile Include="rewind.c" />
+    <ClCompile Include="rget.c" />
+    <ClCompile Include="scanf.c" />
+    <ClCompile Include="sccl.c" />
+    <ClCompile Include="setbuf.c" />
+    <ClCompile Include="setbuffer.c" />
+    <ClCompile Include="setlinebuf.c" />
+    <ClCompile Include="setvbuf.c" />
+    <ClCompile Include="siprintf.c" />
+    <ClCompile Include="siscanf.c" />
+    <ClCompile Include="sniprintf.c" />
+    <ClCompile Include="snprintf.c" />
+    <ClCompile Include="sprintf.c" />
+    <ClCompile Include="sscanf.c" />
+    <ClCompile Include="stdio.c" />
+    <ClCompile Include="stdio_ext.c" />
+    <ClCompile Include="svfiprintf.c" />
+    <ClCompile Include="svfiscanf.c" />
+    <ClCompile Include="svfiwprintf.c" />
+    <ClCompile Include="svfiwscanf.c" />
+    <ClCompile Include="svfprintf.c" />
+    <ClCompile Include="svfscanf.c" />
+    <ClCompile Include="svfwprintf.c" />
+    <ClCompile Include="svfwscanf.c" />
+    <ClCompile Include="swprintf.c" />
+    <ClCompile Include="swscanf.c" />
+    <ClCompile Include="tmpfile.c" />
+    <ClCompile Include="tmpnam.c" />
+    <ClCompile Include="ungetc.c" />
+    <ClCompile Include="ungetwc.c" />
+    <ClCompile Include="vasiprintf.c" />
+    <ClCompile Include="vasniprintf.c" />
+    <ClCompile Include="vasnprintf.c" />
+    <ClCompile Include="vasprintf.c" />
+    <ClCompile Include="vdiprintf.c" />
+    <ClCompile Include="vdprintf.c" />
+    <ClCompile Include="vfiprintf.c" />
+    <ClCompile Include="vfiscanf.c" />
+    <ClCompile Include="vfiwprintf.c" />
+    <ClCompile Include="vfiwscanf.c" />
+    <ClCompile Include="vfprintf.c" />
+    <ClCompile Include="vfscanf.c" />
+    <ClCompile Include="vfwprintf.c" />
+    <ClCompile Include="vfwscanf.c" />
+    <ClCompile Include="viprintf.c" />
+    <ClCompile Include="viscanf.c" />
+    <ClCompile Include="vprintf.c" />
+    <ClCompile Include="vscanf.c" />
+    <ClCompile Include="vsiprintf.c" />
+    <ClCompile Include="vsiscanf.c" />
+    <ClCompile Include="vsniprintf.c" />
+    <ClCompile Include="vsnprintf.c" />
+    <ClCompile Include="vsprintf.c" />
+    <ClCompile Include="vsscanf.c" />
+    <ClCompile Include="vswprintf.c" />
+    <ClCompile Include="vswscanf.c" />
+    <ClCompile Include="vwprintf.c" />
+    <ClCompile Include="vwscanf.c" />
+    <ClCompile Include="wbuf.c" />
+    <ClCompile Include="wprintf.c" />
+    <ClCompile Include="wscanf.c" />
+    <ClCompile Include="wsetup.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="floatio.h" />
+    <ClInclude Include="fvwrite.h" />
+    <ClInclude Include="local.h" />
+    <ClInclude Include="nano-vfprintf_local.h" />
+    <ClInclude Include="nano-vfscanf_local.h" />
+    <ClInclude Include="vfieeefp.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5709B425-0934-4746-AA85-451E2BA533BB}</ProjectGuid>
+    <RootNamespace>libgmon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -18,6 +18,164 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="advapi32.cc" />
+    <ClCompile Include="aio.cc" />
+    <ClCompile Include="assert.cc" />
+    <ClCompile Include="autoload.cc" />
+    <ClCompile Include="clock.cc" />
+    <ClCompile Include="ctype.cc" />
+    <ClCompile Include="cxx.cc" />
+    <ClCompile Include="cygheap.cc" />
+    <ClCompile Include="cygthread.cc" />
+    <ClCompile Include="cygtls.cc" />
+    <ClCompile Include="cygwait.cc" />
+    <ClCompile Include="cygxdr.cc" />
+    <ClCompile Include="dcrt0.cc" />
+    <ClCompile Include="debug.cc" />
+    <ClCompile Include="devices.cc" />
+    <ClCompile Include="dir.cc" />
+    <ClCompile Include="dlfcn.cc" />
+    <ClCompile Include="dll_init.cc" />
+    <ClCompile Include="dtable.cc" />
+    <ClCompile Include="environ.cc" />
+    <ClCompile Include="errno.cc" />
+    <ClCompile Include="exceptions.cc" />
+    <ClCompile Include="exec.cc" />
+    <ClCompile Include="external.cc" />
+    <ClCompile Include="fcntl.cc" />
+    <ClCompile Include="fenv.c" />
+    <ClCompile Include="fhandler.cc" />
+    <ClCompile Include="fhandler_clipboard.cc" />
+    <ClCompile Include="fhandler_console.cc" />
+    <ClCompile Include="fhandler_cygdrive.cc" />
+    <ClCompile Include="fhandler_dev.cc" />
+    <ClCompile Include="fhandler_dev_fd.cc" />
+    <ClCompile Include="fhandler_disk_file.cc" />
+    <ClCompile Include="fhandler_dsp.cc" />
+    <ClCompile Include="fhandler_fifo.cc" />
+    <ClCompile Include="fhandler_floppy.cc" />
+    <ClCompile Include="fhandler_mqueue.cc" />
+    <ClCompile Include="fhandler_netdrive.cc" />
+    <ClCompile Include="fhandler_nodevice.cc" />
+    <ClCompile Include="fhandler_pipe.cc" />
+    <ClCompile Include="fhandler_proc.cc" />
+    <ClCompile Include="fhandler_process.cc" />
+    <ClCompile Include="fhandler_process_fd.cc" />
+    <ClCompile Include="fhandler_procnet.cc" />
+    <ClCompile Include="fhandler_procsys.cc" />
+    <ClCompile Include="fhandler_procsysvipc.cc" />
+    <ClCompile Include="fhandler_random.cc" />
+    <ClCompile Include="fhandler_raw.cc" />
+    <ClCompile Include="fhandler_registry.cc" />
+    <ClCompile Include="fhandler_serial.cc" />
+    <ClCompile Include="fhandler_signalfd.cc" />
+    <ClCompile Include="fhandler_socket.cc" />
+    <ClCompile Include="fhandler_socket_inet.cc" />
+    <ClCompile Include="fhandler_socket_local.cc" />
+    <ClCompile Include="fhandler_socket_unix.cc" />
+    <ClCompile Include="fhandler_tape.cc" />
+    <ClCompile Include="fhandler_termios.cc" />
+    <ClCompile Include="fhandler_timerfd.cc" />
+    <ClCompile Include="fhandler_tty.cc" />
+    <ClCompile Include="fhandler_virtual.cc" />
+    <ClCompile Include="fhandler_windows.cc" />
+    <ClCompile Include="fhandler_zero.cc" />
+    <ClCompile Include="flock.cc" />
+    <ClCompile Include="fork.cc" />
+    <ClCompile Include="forkable.cc" />
+    <ClCompile Include="glob.cc" />
+    <ClCompile Include="globals.cc" />
+    <ClCompile Include="glob_pattern_p.cc" />
+    <ClCompile Include="grp.cc" />
+    <ClCompile Include="heap.cc" />
+    <ClCompile Include="hookapi.cc" />
+    <ClCompile Include="init.cc" />
+    <ClCompile Include="ioctl.cc" />
+    <ClCompile Include="ipc.cc" />
+    <ClCompile Include="kernel32.cc" />
+    <ClCompile Include="ldap.cc" />
+    <ClCompile Include="libstdcxx_wrapper.cc" />
+    <ClCompile Include="loadavg.cc" />
+    <ClCompile Include="lsearch.cc" />
+    <ClCompile Include="malloc.cc" />
+    <ClCompile Include="malloc_wrapper.cc" />
+    <ClCompile Include="miscfuncs.cc" />
+    <ClCompile Include="mktemp.cc" />
+    <ClCompile Include="mmap.cc" />
+    <ClCompile Include="mmap_alloc.cc" />
+    <ClCompile Include="mount.cc" />
+    <ClCompile Include="msg.cc" />
+    <ClCompile Include="net.cc" />
+    <ClCompile Include="netdb.cc" />
+    <ClCompile Include="nfs.cc" />
+    <ClCompile Include="nlsfuncs.cc" />
+    <ClCompile Include="ntea.cc" />
+    <ClCompile Include="passwd.cc" />
+    <ClCompile Include="path.cc" />
+    <ClCompile Include="pinfo.cc" />
+    <ClCompile Include="poll.cc" />
+    <ClCompile Include="posix_ipc.cc" />
+    <ClCompile Include="posix_timer.cc" />
+    <ClCompile Include="pseudo-reloc.cc" />
+    <ClCompile Include="pthread.cc" />
+    <ClCompile Include="quotactl.cc" />
+    <ClCompile Include="random.cc" />
+    <ClCompile Include="registry.cc" />
+    <ClCompile Include="resource.cc" />
+    <ClCompile Include="scandir.cc" />
+    <ClCompile Include="sched.cc" />
+    <ClCompile Include="security.cc" />
+    <ClCompile Include="sec_acl.cc" />
+    <ClCompile Include="sec_auth.cc" />
+    <ClCompile Include="sec_helper.cc" />
+    <ClCompile Include="sec_posixacl.cc" />
+    <ClCompile Include="select.cc" />
+    <ClCompile Include="sem.cc" />
+    <ClCompile Include="setlsapwd.cc" />
+    <ClCompile Include="shared.cc" />
+    <ClCompile Include="signal.cc" />
+    <ClCompile Include="sigproc.cc" />
+    <ClCompile Include="smallprint.cc" />
+    <ClCompile Include="spawn.cc" />
+    <ClCompile Include="strace.cc" />
+    <ClCompile Include="strfuncs.cc" />
+    <ClCompile Include="strsep.cc" />
+    <ClCompile Include="strsig.cc" />
+    <ClCompile Include="sync.cc" />
+    <ClCompile Include="syscalls.cc" />
+    <ClCompile Include="sysconf.cc" />
+    <ClCompile Include="syslog.cc" />
+    <ClCompile Include="termios.cc" />
+    <ClCompile Include="thread.cc" />
+    <ClCompile Include="timerfd.cc" />
+    <ClCompile Include="times.cc" />
+    <ClCompile Include="tls_pbuf.cc" />
+    <ClCompile Include="tty.cc" />
+    <ClCompile Include="uinfo.cc" />
+    <ClCompile Include="uname.cc" />
+    <ClCompile Include="wait.cc" />
+    <ClCompile Include="wincap.cc" />
+    <ClCompile Include="window.cc" />
+    <ClCompile Include="winf.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fhandler_virtual.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="math\libmath.vcxproj">
+      <Project>{0a975c05-ac55-4328-946c-d89aa6e98a45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="newlib\libc\libc.vcxproj">
+      <Project>{2edcb7b7-2d1e-4bd4-8e6a-5ed9d5e8719e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="regex\libregex.vcxproj">
+      <Project>{283932ea-6be0-49f3-88d1-2e278feeaddb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="tzcode\libtzcode.vcxproj">
+      <Project>{6f8ee20a-0f61-44dd-9306-0c48f9c32e2c}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -28,6 +186,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,7 +201,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -64,6 +222,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

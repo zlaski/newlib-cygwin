@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="a64l.c" />
+    <ClCompile Include="abort.c" />
+    <ClCompile Include="abs.c" />
+    <ClCompile Include="aligned_alloc.c" />
+    <ClCompile Include="arc4random.c" />
+    <ClCompile Include="arc4random_uniform.c" />
+    <ClCompile Include="assert.c" />
+    <ClCompile Include="atexit.c" />
+    <ClCompile Include="atof.c" />
+    <ClCompile Include="atoff.c" />
+    <ClCompile Include="atoi.c" />
+    <ClCompile Include="atol.c" />
+    <ClCompile Include="atoll.c" />
+    <ClCompile Include="btowc.c" />
+    <ClCompile Include="calloc.c" />
+    <ClCompile Include="callocr.c" />
+    <ClCompile Include="cfreer.c" />
+    <ClCompile Include="cxa_atexit.c" />
+    <ClCompile Include="cxa_finalize.c" />
+    <ClCompile Include="div.c" />
+    <ClCompile Include="drand48.c" />
+    <ClCompile Include="dtoa.c" />
+    <ClCompile Include="dtoastub.c" />
+    <ClCompile Include="ecvtbuf.c" />
+    <ClCompile Include="efgcvt.c" />
+    <ClCompile Include="environ.c" />
+    <ClCompile Include="envlock.c" />
+    <ClCompile Include="eprintf.c" />
+    <ClCompile Include="erand48.c" />
+    <ClCompile Include="exit.c" />
+    <ClCompile Include="freer.c" />
+    <ClCompile Include="gdtoa-dmisc.c" />
+    <ClCompile Include="gdtoa-gdtoa.c" />
+    <ClCompile Include="gdtoa-gethex.c" />
+    <ClCompile Include="gdtoa-gmisc.c" />
+    <ClCompile Include="gdtoa-hexnan.c" />
+    <ClCompile Include="gdtoa-ldtoa.c" />
+    <ClCompile Include="getenv.c" />
+    <ClCompile Include="getenv_r.c" />
+    <ClCompile Include="getopt.c" />
+    <ClCompile Include="getsubopt.c" />
+    <ClCompile Include="imaxabs.c" />
+    <ClCompile Include="imaxdiv.c" />
+    <ClCompile Include="itoa.c" />
+    <ClCompile Include="jrand48.c" />
+    <ClCompile Include="l64a.c" />
+    <ClCompile Include="labs.c" />
+    <ClCompile Include="lcong48.c" />
+    <ClCompile Include="ldiv.c" />
+    <ClCompile Include="ldtoa.c" />
+    <ClCompile Include="llabs.c" />
+    <ClCompile Include="lldiv.c" />
+    <ClCompile Include="lrand48.c" />
+    <ClCompile Include="malign.c" />
+    <ClCompile Include="malignr.c" />
+    <ClCompile Include="mallinfor.c" />
+    <ClCompile Include="malloc.c" />
+    <ClCompile Include="mallocr.c" />
+    <ClCompile Include="malloptr.c" />
+    <ClCompile Include="mallstatsr.c" />
+    <ClCompile Include="mblen.c" />
+    <ClCompile Include="mblen_r.c" />
+    <ClCompile Include="mbrlen.c" />
+    <ClCompile Include="mbrtowc.c" />
+    <ClCompile Include="mbsinit.c" />
+    <ClCompile Include="mbsnrtowcs.c" />
+    <ClCompile Include="mbsrtowcs.c" />
+    <ClCompile Include="mbstowcs.c" />
+    <ClCompile Include="mbstowcs_r.c" />
+    <ClCompile Include="mbtowc.c" />
+    <ClCompile Include="mbtowc_r.c" />
+    <ClCompile Include="mlock.c" />
+    <ClCompile Include="mprec.c" />
+    <ClCompile Include="mrand48.c" />
+    <ClCompile Include="msize.c" />
+    <ClCompile Include="msizer.c" />
+    <ClCompile Include="mstats.c" />
+    <ClCompile Include="mtrim.c" />
+    <ClCompile Include="nano-mallocr.c" />
+    <ClCompile Include="nrand48.c" />
+    <ClCompile Include="on_exit.c" />
+    <ClCompile Include="on_exit_args.c" />
+    <ClCompile Include="putenv.c" />
+    <ClCompile Include="putenv_r.c" />
+    <ClCompile Include="pvallocr.c" />
+    <ClCompile Include="quick_exit.c" />
+    <ClCompile Include="rand.c" />
+    <ClCompile Include="rand48.c" />
+    <ClCompile Include="random.c" />
+    <ClCompile Include="rand_r.c" />
+    <ClCompile Include="realloc.c" />
+    <ClCompile Include="reallocarray.c" />
+    <ClCompile Include="reallocf.c" />
+    <ClCompile Include="reallocr.c" />
+    <ClCompile Include="rpmatch.c" />
+    <ClCompile Include="sb_charsets.c" />
+    <ClCompile Include="seed48.c" />
+    <ClCompile Include="setenv.c" />
+    <ClCompile Include="setenv_r.c" />
+    <ClCompile Include="srand48.c" />
+    <ClCompile Include="strtod.c" />
+    <ClCompile Include="strtodg.c" />
+    <ClCompile Include="strtoimax.c" />
+    <ClCompile Include="strtol.c" />
+    <ClCompile Include="strtold.c" />
+    <ClCompile Include="strtoll.c" />
+    <ClCompile Include="strtoll_r.c" />
+    <ClCompile Include="strtorx.c" />
+    <ClCompile Include="strtoul.c" />
+    <ClCompile Include="strtoull.c" />
+    <ClCompile Include="strtoull_r.c" />
+    <ClCompile Include="strtoumax.c" />
+    <ClCompile Include="system.c" />
+    <ClCompile Include="utoa.c" />
+    <ClCompile Include="valloc.c" />
+    <ClCompile Include="vallocr.c" />
+    <ClCompile Include="wcrtomb.c" />
+    <ClCompile Include="wcsnrtombs.c" />
+    <ClCompile Include="wcsrtombs.c" />
+    <ClCompile Include="wcstod.c" />
+    <ClCompile Include="wcstoimax.c" />
+    <ClCompile Include="wcstol.c" />
+    <ClCompile Include="wcstold.c" />
+    <ClCompile Include="wcstoll.c" />
+    <ClCompile Include="wcstoll_r.c" />
+    <ClCompile Include="wcstombs.c" />
+    <ClCompile Include="wcstombs_r.c" />
+    <ClCompile Include="wcstoul.c" />
+    <ClCompile Include="wcstoull.c" />
+    <ClCompile Include="wcstoull_r.c" />
+    <ClCompile Include="wcstoumax.c" />
+    <ClCompile Include="wctob.c" />
+    <ClCompile Include="wctomb.c" />
+    <ClCompile Include="wctomb_r.c" />
+    <ClCompile Include="_Exit.c" />
+    <ClCompile Include="_mallocr.c" />
+    <ClCompile Include="__adjust.c" />
+    <ClCompile Include="__atexit.c" />
+    <ClCompile Include="__call_atexit.c" />
+    <ClCompile Include="__exp10.c" />
+    <ClCompile Include="__ten_mu.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arc4random.h" />
+    <ClInclude Include="atexit.h" />
+    <ClInclude Include="chacha_private.h" />
+    <ClInclude Include="gdtoa.h" />
+    <ClInclude Include="gdtoaimp.h" />
+    <ClInclude Include="local.h" />
+    <ClInclude Include="mbctype.h" />
+    <ClInclude Include="mprec.h" />
+    <ClInclude Include="on_exit_args.h" />
+    <ClInclude Include="rand48.h" />
+    <ClInclude Include="std.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3DDC71BC-3E90-41E4-9709-78B2B3E18080}</ProjectGuid>
+    <RootNamespace>libgmon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).build\bin\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir).build\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{29861e2c-5b7f-454c-aed2-4af120a35a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="complex">
+      <UniqueIdentifier>{2bbf32ce-96c9-439f-ab81-27f6a31b1abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fenv">
+      <UniqueIdentifier>{3da5c078-20f2-4396-9afb-5e1324eddb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="machine">
+      <UniqueIdentifier>{ea0246dd-5b9e-4c4b-9dd5-cacb35a41077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="machine\i386">
+      <UniqueIdentifier>{e035ff96-d97b-4253-9c41-bc82d98c17e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="machine\x86_64">
+      <UniqueIdentifier>{3836a1ef-77a5-4121-a94c-ed8fa3da6f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{db831fa0-b409-4dca-9dbb-30588c073973}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\acoshl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\acosl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\asinhl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\asinl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\atan2l.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\atanhl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\atanl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cbrtl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ceill.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\copysignl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cosf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\coshl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\cosl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\erfcl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\erfl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\exp.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\exp_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\exp2.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\exp2l.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\expl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\expm1l.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fabsl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fdiml.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\floorl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fmal.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fmaxl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fminl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\fmodl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\frexpl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\hypotl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ilogbl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\isgreater.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ldexpl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lgammal.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\llrintl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\llroundl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log1pl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log2.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log2_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log2l.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log10l.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\logbl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\logl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lrintl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lroundl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\math_err.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\math_errf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\modfl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nanl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nearbyintl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nextafterl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nexttoward.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nexttowardf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\nexttowardl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pow.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pow_log_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\powl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\remainderl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\remquol.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\rintl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\roundl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_cbrt.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_copysign.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_exp10.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_expm1.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_fdim.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_finite.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_fma.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_fmax.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_fmin.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_fpclassify.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_ilogb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_infinity.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_isinf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_isinfd.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_isnan.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_isnand.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_llrint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_llround.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_log1p.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_log2.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_logb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_lrint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_lround.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_modf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_nan.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_nearbyint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_nextafter.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_pow10.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_remquo.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_rint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_round.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_scalbln.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_scalbn.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_signbit.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\s_trunc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\scalblnl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\scalbnl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_cbrt.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_copysign.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_exp.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_exp2.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_exp2_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_exp10.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_expm1.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_fdim.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_finite.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_fma.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_fmax.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_fmin.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_fpclassify.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_ilogb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_infinity.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_isinf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_isinff.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_isnan.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_isnanf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_llrint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_llround.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_log.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_log_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_log1p.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_log2.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_log2_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_logb.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_lrint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_lround.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_modf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_nan.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_nearbyint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_nextafter.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_pow.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_pow_log2_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_pow10.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_remquo.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_rint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_round.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_scalbln.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_scalbn.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sf_trunc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sincosf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sincosf_data.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sinf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sinhl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sinl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sl_finite.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\sqrtl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tanhl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tanl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tgammal.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\truncl.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cabs.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cabsf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cabsl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacos.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacosf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacosh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacoshf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacoshl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cacosl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\carg.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cargf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cargl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casin.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casinf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casinh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casinhf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casinhl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\casinl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catan.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catanf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catanh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catanhf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catanhl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\catanl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccos.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccosf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccosh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccoshf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccoshl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ccosl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cephes_subr.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cephes_subrf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cephes_subrl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cexp.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cexpf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cexpl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cimag.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cimagf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cimagl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\clog.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\clog10.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\clog10f.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\clogf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\clogl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\conj.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\conjf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\conjl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cpow.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cpowf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cpowl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cproj.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cprojf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\cprojl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\creal.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\crealf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\creall.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csin.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csinf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csinh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csinhf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csinhl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csinl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csqrt.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csqrtf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\csqrtl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctan.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctanf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctanh.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctanhf.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctanhl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="complex\ctanl.c">
+      <Filter>complex</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fe_dfl_env.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\feclearexcept.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fegetenv.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fegetexceptflag.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fegetround.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\feholdexcept.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fenv_stub.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\feraiseexcept.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fesetenv.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fesetexceptflag.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fesetround.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\fetestexcept.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="fenv\feupdateenv.c">
+      <Filter>fenv</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_exp.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_expf.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_llrint.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_llrintf.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_llrintl.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_lrint.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_lrintf.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_lrintl.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_pow.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_powf.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_rint.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_rintf.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\f_rintl.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\feclearexcept.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fegetenv.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fegetexceptflag.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fegetround.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\feholdexcept.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fenv.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\feraiseexcept.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fesetenv.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fesetexceptflag.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fesetround.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\fetestexcept.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\i386\feupdateenv.c">
+      <Filter>machine\i386</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\feclearexcept.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fegetenv.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fegetexceptflag.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fegetround.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\feholdexcept.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fenv.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\feraiseexcept.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fesetenv.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fesetexceptflag.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fesetround.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\fetestexcept.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="machine\x86_64\feupdateenv.c">
+      <Filter>machine\x86_64</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_acos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_acosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_asin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_atan2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_atanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_cosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_exp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_fmod.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_hypot.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_j0.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_j1.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_jn.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_log.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_log10.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_pow.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_remainder.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_scalb.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_sinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_sqrt.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\e_tgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_acos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_acosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_asin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_atan2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_atanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_cosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_exp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_fmod.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_hypot.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_j0.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_j1.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_jn.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_log.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_log10.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_pow.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_remainder.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_scalb.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_sinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_sqrt.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\ef_tgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\el_hypot.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\er_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\erf_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\k_cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\k_rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\k_sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\k_standard.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\k_tan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\kf_cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\kf_rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\kf_sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\kf_tan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_asinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_atan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_ceil.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_erf.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_fabs.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_floor.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_frexp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_ldexp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_signif.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_tan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\s_tanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_asinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_atan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_ceil.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_erf.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_fabs.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_floor.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_frexp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_ldexp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_signif.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_tan.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\sf_tanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_acos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_acosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_asin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_atan2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_atanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_cosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_drem.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_exp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_exp2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_fmod.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_gamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_hypot.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_j0.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_j1.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_jn.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_log.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_log10.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_pow.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_remainder.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_scalb.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_sincos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_sinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_sqrt.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\w_tgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_acos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_acosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_asin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_atan2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_atanh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_cosh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_drem.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_exp.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_exp2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_fmod.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_gamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_hypot.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_j0.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_j1.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_jn.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_log.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_log2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_log10.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_pow.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_remainder.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_scalb.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_sincos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_sinh.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_sqrt.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wf_tgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wr_gamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wr_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wrf_gamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\wrf_lgamma.c">
+      <Filter>math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\fdlibm.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\local.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\math_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\sincosf.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="complex\cephes_subr.h">
+      <Filter>complex</Filter>
+    </ClInclude>
+    <ClInclude Include="complex\cephes_subrf.h">
+      <Filter>complex</Filter>
+    </ClInclude>
+    <ClInclude Include="complex\cephes_subrl.h">
+      <Filter>complex</Filter>
+    </ClInclude>
+    <ClInclude Include="machine\i386\f_math.h">
+      <Filter>machine\i386</Filter>
+    </ClInclude>
+    <ClInclude Include="machine\i386\i386mach.h">
+      <Filter>machine\i386</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="complex\complex.tex">
+      <Filter>complex</Filter>
+    </None>
+    <None Include="machine\i386\f_atan2.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_atan2f.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_frexp.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_frexpf.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_ldexp.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_ldexpf.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_log.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_log10.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_log10f.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_logf.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_tan.S">
+      <Filter>machine\i386</Filter>
+    </None>
+    <None Include="machine\i386\f_tanf.S">
+      <Filter>machine\i386</Filter>
+    </None>
+  </ItemGroup>
+</Project>
