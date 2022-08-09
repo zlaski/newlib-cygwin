@@ -49,6 +49,8 @@ lost+found
 
 .build/
 
+Win32/
+x64/
 
 .vs/
 *.user
