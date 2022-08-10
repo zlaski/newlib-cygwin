@@ -60,7 +60,9 @@
   effect of omitting the function if it isn't referenced) we use
   'static inline', which c99 defines to mean more-or-less the same
   as the Gnu C 'extern inline'.  */
-#if defined(__GNUC__) && !defined(__GNUC_STDC_INLINE__)
+#ifdef _MSC_VER
+#define _ELIDABLE_INLINE static __inline
+#elif defined(__GNUC__) && !defined(__GNUC_STDC_INLINE__)
 /* We're using GCC, but without the new C99-compatible behaviour.  */
 #define _ELIDABLE_INLINE extern __inline__ _ATTRIBUTE ((__always_inline__))
 #else
@@ -69,14 +71,20 @@
 #define _ELIDABLE_INLINE static __inline__
 #endif
 
-#if __GNUC_PREREQ (3, 1)
+#ifdef _MSC_VER
+#define _NOINLINE		__declspec(noinline)
+#define _NOINLINE_STATIC	_NOINLINE static
+#define _NORETURN __declspec(noreturn)
+#elif __GNUC_PREREQ (3, 1)
 #define _NOINLINE		__attribute__ ((__noinline__))
 #define _NOINLINE_STATIC	_NOINLINE static
+#define _NORETURN __attribute__ ((__noreturn__))
 #else
 /* On non-GNU compilers and GCC prior to version 3.1 the compiler can't be
    trusted not to inline if it is static. */
 #define _NOINLINE
 #define _NOINLINE_STATIC
+#define _NORETURN
 #endif
 
 #endif /* _ANSIDECL_H_ */

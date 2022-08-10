@@ -4,6 +4,22 @@
 #include <machine/ieeefp.h>  /* floating point macros */
 #include <sys/features.h>	/* POSIX defs */
 
+#ifdef _MSC_VER
+#if defined _M_IX86
+#define __INTPTR_TYPE__ __int32
+#define __PTRDIFF_TYPE__ __int32
+#define __I386__
+#elif defined _M_X64
+#define __INTPTR_TYPE__ __int64
+#define __PTRDIFF_TYPE__ __int64
+#define __x86_64__
+#endif
+#define __extension__
+#if defined(_USE_32BIT_TIME_T) && !defined(_USE_LONG_TIME_T)
+#define _USE_LONG_TIME_T
+#endif
+#endif
+
 #ifdef __aarch64__
 #define MALLOC_ALIGNMENT 16
 #endif

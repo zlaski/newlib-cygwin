@@ -15,7 +15,9 @@ extern "C" {
 #else /* _REENT_THREAD_LOCAL */
 
 #ifndef _REENT_ONLY
+#ifndef errno
 #define errno (*__errno())
+#endif
 extern int *__errno (void);
 #endif
 

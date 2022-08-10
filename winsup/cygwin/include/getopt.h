@@ -27,7 +27,7 @@
  * SUCH DAMAGE.
  */
 
-#ifdef _LIBC
+#if defined(_LIBC) && !defined(_MSC_VER)
 #include_next "getopt.h"
 #else
 #ifndef __GETOPT_H__

@@ -23,20 +23,33 @@ details. */
 _ELIDABLE_INLINE __uint32_t __ntohl(__uint32_t);
 _ELIDABLE_INLINE __uint16_t __ntohs(__uint16_t);
 
+#ifdef _MSC_VER
+unsigned short _byteswap_ushort(unsigned short val);
+unsigned long _byteswap_ulong(unsigned long val);
+#endif
+
 _ELIDABLE_INLINE __uint32_t
 __ntohl(__uint32_t _x)
 {
+#ifdef _MSC_VER
+	return _byteswap_ulong(_x);
+#else
 	__asm__("bswap %0" : "=r" (_x) : "0" (_x));
 	return _x;
+#endif
 }
 
 _ELIDABLE_INLINE __uint16_t
 __ntohs(__uint16_t _x)
 {
+#ifdef _MSC_VER
+	return _byteswap_ushort(_x);
+#else
 	__asm__("xchgb %b0,%h0"		/* swap bytes		*/
 		: "=Q" (_x)
 		:  "0" (_x));
 	return _x;
+#endif
 }
 
 #define __htonl(_x) __ntohl(_x)

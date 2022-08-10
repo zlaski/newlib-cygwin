@@ -226,7 +226,7 @@ print_version ()
 	  strrchr (__DATE__, ' ') + 1);
 }
 
-static void __attribute__ ((__noreturn__))
+static void _NORETURN
 usage (FILE *stream)
 {
   fprintf (stream, "Usage: %s [-RVfHv] [+-=mode]... [file]...\n",

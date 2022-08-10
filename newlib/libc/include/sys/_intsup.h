@@ -56,7 +56,11 @@
 #define __int20__ +2
 #define int +2
 #define long +4
-#if (__INTPTR_TYPE__ == 8 || __INTPTR_TYPE__ == 10)
+#if defined(_MSC_VER) && defined(_M_X64)
+#define _INTPTR_EQ_LONGLONG
+#elif defined(_MSC_VER) && defined(_M_IX86)
+#define _INTPTR_EQ_LONG
+#elif (__INTPTR_TYPE__ == 8 || __INTPTR_TYPE__ == 10)
 #define _INTPTR_EQ_LONGLONG
 #elif (__INTPTR_TYPE__ == 4 || __INTPTR_TYPE__ == 6)
 #define _INTPTR_EQ_LONG
@@ -70,7 +74,9 @@
 #else
 #error "Unable to determine type definition of intptr_t"
 #endif
-#if (__INT32_TYPE__ == 4 || __INT32_TYPE__ == 6)
+#ifdef _MSC_VER
+#define _INT32_EQ_LONG
+#elif (__INT32_TYPE__ == 4 || __INT32_TYPE__ == 6)
 #define _INT32_EQ_LONG
 #elif __INT32_TYPE__ == 2
 /* Nothing to define because int32_t is safe to print as an int. */
@@ -78,7 +84,9 @@
 #error "Unable to determine type definition of int32_t"
 #endif
 
-#if (__INT8_TYPE__ == 0)
+#ifdef _MSC_VER
+#define __INT8 "hh"
+#elif (__INT8_TYPE__ == 0)
 #define __INT8 "hh"
 #elif (__INT8_TYPE__ == 1 || __INT8_TYPE__ == 3)
 #define __INT8 "h"
@@ -89,7 +97,9 @@
 #elif (__INT8_TYPE__ == 8 || __INT8_TYPE__ == 10)
 #define __INT8 "ll"
 #endif
-#if (__INT16_TYPE__ == 1 || __INT16_TYPE__ == 3)
+#ifdef _MSC_VER
+#define __INT16 "h"
+#elif (__INT16_TYPE__ == 1 || __INT16_TYPE__ == 3)
 #define __INT16 "h"
 #elif (__INT16_TYPE__ == 2)
 #define __INT16
@@ -98,21 +108,28 @@
 #elif (__INT16_TYPE__ == 8 || __INT16_TYPE__ == 10)
 #define __INT16 "ll"
 #endif
-#if (__INT32_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __INT32
+#elif (__INT32_TYPE__ == 2)
 #define __INT32
 #elif (__INT32_TYPE__ == 4 || __INT32_TYPE__ == 6)
 #define __INT32 "l"
 #elif (__INT32_TYPE__ == 8 || __INT32_TYPE__ == 10)
 #define __INT32 "ll"
 #endif
-#if (__INT64_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __INT64 "ll"
+#elif (__INT64_TYPE__ == 2)
 #define __INT64
 #elif (__INT64_TYPE__ == 4 || __INT64_TYPE__ == 6)
 #define __INT64 "l"
 #elif (__INT64_TYPE__ == 8 || __INT64_TYPE__ == 10)
 #define __INT64 "ll"
 #endif
-#if (__INT_FAST8_TYPE__ == 0)
+
+#ifdef _MSC_VER
+#define __FAST8 "hh"
+#elif (__INT_FAST8_TYPE__ == 0)
 #define __FAST8 "hh"
 #elif (__INT_FAST8_TYPE__ == 1 || __INT_FAST8_TYPE__ == 3)
 #define __FAST8 "h"
@@ -123,7 +140,9 @@
 #elif (__INT_FAST8_TYPE__ == 8 || __INT_FAST8_TYPE__ == 10)
 #define __FAST8 "ll"
 #endif
-#if (__INT_FAST16_TYPE__ == 1 || __INT_FAST16_TYPE__ == 3)
+#ifdef _MSC_VER
+#define __FAST16 "h"
+#elif (__INT_FAST16_TYPE__ == 1 || __INT_FAST16_TYPE__ == 3)
 #define __FAST16 "h"
 #elif (__INT_FAST16_TYPE__ == 2)
 #define __FAST16
@@ -132,14 +151,18 @@
 #elif (__INT_FAST16_TYPE__ == 8 || __INT_FAST16_TYPE__ == 10)
 #define __FAST16 "ll"
 #endif
-#if (__INT_FAST32_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __FAST32
+#elif (__INT_FAST32_TYPE__ == 2)
 #define __FAST32
 #elif (__INT_FAST32_TYPE__ == 4 || __INT_FAST32_TYPE__ == 6)
 #define __FAST32 "l"
 #elif (__INT_FAST32_TYPE__ == 8 || __INT_FAST32_TYPE__ == 10)
 #define __FAST32 "ll"
 #endif
-#if (__INT_FAST64_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __FAST64 "ll"
+#elif (__INT_FAST64_TYPE__ == 2)
 #define __FAST64
 #elif (__INT_FAST64_TYPE__ == 4 || __INT_FAST64_TYPE__ == 6)
 #define __FAST64 "l"
@@ -147,7 +170,9 @@
 #define __FAST64 "ll"
 #endif
 
-#if (__INT_LEAST8_TYPE__ == 0)
+#ifdef _MSC_VER
+#define __LEAST8 "hh"
+#elif (__INT_LEAST8_TYPE__ == 0)
 #define __LEAST8 "hh"
 #elif (__INT_LEAST8_TYPE__ == 1 || __INT_LEAST8_TYPE__ == 3)
 #define __LEAST8 "h"
@@ -158,7 +183,9 @@
 #elif (__INT_LEAST8_TYPE__ == 8 || __INT_LEAST8_TYPE__ == 10)
 #define __LEAST8 "ll"
 #endif
-#if (__INT_LEAST16_TYPE__ == 1 || __INT_LEAST16_TYPE__ == 3)
+#ifdef _MSC_VER
+#define __LEAST16 "h"
+#elif (__INT_LEAST16_TYPE__ == 1 || __INT_LEAST16_TYPE__ == 3)
 #define __LEAST16 "h"
 #elif (__INT_LEAST16_TYPE__ == 2)
 #define __LEAST16
@@ -167,20 +194,25 @@
 #elif (__INT_LEAST16_TYPE__ == 8 || __INT_LEAST16_TYPE__ == 10)
 #define __LEAST16 "ll"
 #endif
-#if (__INT_LEAST32_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __LEAST32
+#elif (__INT_LEAST32_TYPE__ == 2)
 #define __LEAST32
 #elif (__INT_LEAST32_TYPE__ == 4 || __INT_LEAST32_TYPE__ == 6)
 #define __LEAST32 "l"
 #elif (__INT_LEAST32_TYPE__ == 8 || __INT_LEAST32_TYPE__ == 10)
 #define __LEAST32 "ll"
 #endif
-#if (__INT_LEAST64_TYPE__ == 2)
+#ifdef _MSC_VER
+#define __LEAST64 "ll"
+#elif (__INT_LEAST64_TYPE__ == 2)
 #define __LEAST64
 #elif (__INT_LEAST64_TYPE__ == 4 || __INT_LEAST64_TYPE__ == 6)
 #define __LEAST64 "l"
 #elif (__INT_LEAST64_TYPE__ == 8 || __INT_LEAST64_TYPE__ == 10)
 #define __LEAST64 "ll"
 #endif
+
 #undef signed
 #undef unsigned
 #undef char

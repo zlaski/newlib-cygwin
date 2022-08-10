@@ -32,6 +32,9 @@ extern "C" {
 
 #if defined (_LIBC) || defined (__INSIDE_CYGWIN__)
 
+#ifdef _MSC_VER
+extern struct _reent* __getreent(void);
+#else
 __attribute__((__gnu_inline__))
 extern inline struct _reent *__getreent (void)
 {
@@ -43,6 +46,7 @@ extern inline struct _reent *__getreent (void)
 #endif
   return (struct _reent *) (ret - __CYGTLS_PADSIZE__);
 }
+#endif /* _MSC_VER */
 #endif /* _LIBC || __INSIDE_CYGWIN__ */
 
 #define _SYMSTR(x)	#x
