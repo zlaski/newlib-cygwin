@@ -116,12 +116,12 @@ typedef int errno_t;
 
 #ifndef _TIME32_T_DEFINED
 #define _TIME32_T_DEFINED
-typedef long __time32_t;
+typedef __int32 __time32_t;
 #endif
 
 #ifndef _TIME64_T_DEFINED
 #define _TIME64_T_DEFINED
-__MINGW_EXTENSION typedef __int_least64_t __time64_t;
+__MINGW_EXTENSION typedef __int64 __time64_t;
 #endif /* _TIME64_T_DEFINED */
 
 #ifndef _TIME_T_DEFINED

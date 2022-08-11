@@ -313,7 +313,7 @@ sbttots(sbintime_t _sbt)
 	struct timespec _ts;
 
 	_ts.tv_sec = _sbt >> 32;
-	_ts.tv_nsec = sbttons((uint32_t)_sbt);
+	_ts.tv_nsec = (long)sbttons((uint32_t)_sbt);
 	return (_ts);
 }
 
@@ -330,7 +330,7 @@ sbttotv(sbintime_t _sbt)
 	struct timeval _tv;
 
 	_tv.tv_sec = _sbt >> 32;
-	_tv.tv_usec = sbttous((uint32_t)_sbt);
+	_tv.tv_usec = (suseconds_t)sbttous((uint32_t)_sbt);
 	return (_tv);
 }
 

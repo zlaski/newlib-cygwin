@@ -15,6 +15,7 @@
 #define __x86_64__
 #endif
 #define __extension__
+#define MISSING_SYSCALL_NAMES
 #if defined(_USE_32BIT_TIME_T) && !defined(_USE_LONG_TIME_T)
 #define _USE_LONG_TIME_T
 #endif

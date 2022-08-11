@@ -96,7 +96,9 @@ typedef __uint32_t __mode_t;
 __extension__ typedef long long _off64_t;
 #endif
 
-#if defined(__CYGWIN__) && !defined(__LP64__)
+#ifdef _MSC_VER
+typedef _off_t __off_t;
+#elif defined(__CYGWIN__) && !defined(__LP64__)
 typedef _off64_t __off_t;
 #else
 typedef _off_t __off_t;
@@ -182,9 +184,9 @@ typedef void *_iconv_t;
 typedef	_CLOCK_T_	__clock_t;
 
 #if defined(_USE_LONG_TIME_T) || __LONG_MAX__ > 0x7fffffffL
-#define	_TIME_T_ long
+#define	_TIME_T_ __int32
 #else
-#define	_TIME_T_ __int_least64_t
+#define	_TIME_T_ __int64
 #endif
 typedef	_TIME_T_	__time_t;
 

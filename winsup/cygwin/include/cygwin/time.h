@@ -28,14 +28,14 @@ extern int stime (const time_t *);
 
 #if __SVID_VISIBLE || __XSI_VISIBLE
 #ifdef _MSC_VER
-extern int _daylight; 
+extern __IMPORT int _daylight;
 #else
 extern int daylight __asm__ (_SYMSTR (_daylight));
 #endif
 
 #ifndef __timezonefunc__
 #ifdef _MSC_VER
-extern long _timezone;
+extern __IMPORT long _timezone;
 #else
 extern long timezone __asm__ (_SYMSTR (_timezone));
 #endif
