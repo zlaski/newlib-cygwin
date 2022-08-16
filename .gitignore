@@ -30,6 +30,8 @@ libtool
 POTFILES
 *-POTFILES
 
+.build/
+.vs/
 winsup/aclocal.m4
 winsup/configure
 winsup/**/Makefile.in
