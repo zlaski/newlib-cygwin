@@ -46,6 +46,7 @@ NEW_DLL_NAME=new-cygwin1.dll
 DEF_FILE=cygwin.def
 LIB_NAME=libcygwin.a
 TEST_LIB_NAME=libcygwin0.a
+STATIC_LIB_NAME=libcygwin_s.a
 
 #
 # sources
@@ -644,12 +645,20 @@ libacl.a: $(LIB_NAME) sec/posixacl.o
 
 libssp.a: $(LIB_NAME) $(wildcard $(newlib_build)/libc/ssp/*.o)
 	$(AM_V_GEN)$(speclib) $^ $(@F)
+    
+# static library
+
+$(STATIC_LIB_NAME): $(NEW_DLL_NAME)
+	$(AM_V_AR)cd ../.. ; \
+	rm -f winsup/cygwin/$(STATIC_LIB_NAME) ; \
+	ar -crsuP winsup/cygwin/$(STATIC_LIB_NAME) @$(srcdir)/libcygwin_s.objects ; \
+	cd winsup/cygwin
 
 #
 # all
 #
 
-all-local: $(LIB_NAME) $(TEST_LIB_NAME) $(SUBLIBS)
+all-local: $(LIB_NAME) $(TEST_LIB_NAME) $(SUBLIBS) $(STATIC_LIB_NAME)
 
 #
 # clean
@@ -660,7 +669,7 @@ clean-local:
 	-rm -f $(DEF_FILE) sigfe.s
 	-rm -f cygwin.sc cygdll.a cygwin.map
 	-rm -f $(PRE_DLL_NAME) $(DBG_DLL_NAME) $(NEW_DLL_NAME)
-	-rm -f $(LIB_NAME) $(TEST_LIB_NAME) $(SUBLIBS)
+	-rm -f $(LIB_NAME) $(TEST_LIB_NAME) $(SUBLIBS) $(STATIC_LIB_NAME)
 	-rm -f version.cc
 	-rm -f tlsoffsets
 
@@ -679,6 +688,8 @@ install-data-local: install-headers install-ldif
 install-libs:
 	@$(MKDIR_P) $(DESTDIR)$(bindir)
 	$(INSTALL_PROGRAM) $(NEW_DLL_NAME) $(DESTDIR)$(bindir)/$(DLL_NAME)
+	@$(MKDIR_P) $(DESTDIR)$(libdir)
+	$(INSTALL_PROGRAM) $(STATIC_LIB_NAME) $(DESTDIR)$(libdir)/$(STATIC_LIB_NAME)
 	@$(MKDIR_P) $(DESTDIR)$(toollibdir)
 	(cd $(DESTDIR)$(toollibdir) && ln -sf $(LIB_NAME) libg.a)
 
@@ -704,6 +715,7 @@ uninstall-hook: uninstall-headers uninstall-ldif uninstall-libs
 uninstall-libs:
 	rm -f $(DESTDIR)$(bindir)/cygwin1.dll
 	rm -f $(DESTDIR)$(toollibdir)/libg.a
+	rm -f $(DESTDIR)$(libdir)/$(STATIC_LIB_NAME)
 
 uninstall-headers:
 	cd $(srcdir)/include; \
