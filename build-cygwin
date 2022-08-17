@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# git clone --config core.autocrlf=false https://github.com/zlaski/newlib-cygwin.git
+# git config --global core.autocrlf false
+
+ESC=
+
+RED=$ESC[91m
+GREEN=$ESC[92m
+YELLOW=$ESC[93m
+BLUE=$ESC[94m
+MAGENTA=$ESC[95m
+CYAN=$ESC[96m
+WHITE=$ESC[97m
+DEFAULT=$ESC[0m
+
+SCRIPT="`basename "$0"`"
+cd "`dirname "$0"`"
+CYGSRCROOT="$PWD"
+
+rm -rf .build
+mkdir -p .build/build .build/install
+LOG="$CYGSRCROOT/.build/build-cygwin.log"
+
+echo ${GREEN}${SCRIPT}: Building newlib-cygwin . . .${DEFAULT}
+echo ${GREEN}Writing log to ${LOG} . . .${DEFAULT}
+echo ${GREEN}=====================================================${DEFAULT}
+
+{
+    echo Cygwin source dir: ${CYGSRCROOT}
+    echo $LOG for: $(date)
+    echo =====================================================
+
+    set -x
+
+    cd "$CYGSRCROOT/winsup"
+    SHELL='/bin/sh -x' autoreconf || exit 1
+    SHELL='/bin/sh -x' ./autogen.sh
+    cd "$CYGSRCROOT/.build/build"
+    SHELL='/bin/sh -x' "$CYGSRCROOT/configure" --disable-doc --prefix="$CYGSRCROOT/.build/install"
+    make SHELL='/bin/sh -x'
+    make install SHELL='/bin/sh -x'
+
+    set +x
+
+    echo =====================================================
+    echo Finished building native-cygwin.
+
+} 2>&1 | tee $LOG
+
+# Packages (probably) needed to build Cygwin
+
+# Package                                 Version            Status
+# autoconf                                15-1               OK
+# automake                                11-1               OK
+# binutils                                2.38-1             OK
+# cocom                                   0.996-2            OK
+# coreutils                               8.32-1             OK
+# diffutils                               3.8-1              OK
+# findutils                               4.9.0-1            OK
+# gawk                                    5.1.1-1            OK
+# gcc-core                                11.3.0-1           OK
+# gcc-g++                                 11.3.0-1           OK
+# grep                                    3.7-2              OK
+# libiconv                                1.17-1             OK
+# libintl8                                0.21-1             OK
+# libstdc++6                              11.3.0-1           OK
+# m4                                      1.4.19-1           OK
+# make                                    4.3-1              OK
+# patch                                   2.7.4-1            OK
+# sed                                     4.8-1              OK
+# zlib                                    1.2.12-1           OK
