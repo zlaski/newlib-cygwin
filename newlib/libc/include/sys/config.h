@@ -6,12 +6,20 @@
 
 #ifdef _MSC_VER
 #if defined _M_IX86
+#ifndef __INTPTR_TYPE__
 #define __INTPTR_TYPE__ __int32
+#endif
+#ifndef __PTRDIFF_TYPE__
 #define __PTRDIFF_TYPE__ __int32
+#endif
 #define __I386__
 #elif defined _M_X64
+#ifndef __INTPTR_TYPE__
 #define __INTPTR_TYPE__ __int64
+#endif
+#ifndef __PTRDIFF_TYPE__
 #define __PTRDIFF_TYPE__ __int64
+#endif
 #define __x86_64__
 #endif
 #define __extension__

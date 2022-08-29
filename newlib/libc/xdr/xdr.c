@@ -781,7 +781,7 @@ xdr_string (XDR * xdrs,
       if (sp == NULL)
         return FALSE;
 
-      size = strlen (sp);
+      size = (u_int)strlen (sp);
       break;
     case XDR_DECODE:
       break;

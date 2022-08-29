@@ -75,16 +75,21 @@
 #define _NOINLINE		__declspec(noinline)
 #define _NOINLINE_STATIC	_NOINLINE static
 #define _NORETURN __declspec(noreturn)
+#define _PACKED(T, ...) \
+    __pragma(pack(push, 1)) T __VA_ARGS__ __pragma(pack(pop))
 #elif __GNUC_PREREQ (3, 1)
 #define _NOINLINE		__attribute__ ((__noinline__))
 #define _NOINLINE_STATIC	_NOINLINE static
 #define _NORETURN __attribute__ ((__noreturn__))
+#define _PACKED(T, ...) \
+    T __attribute__((packed)) __VA_ARGS__
 #else
 /* On non-GNU compilers and GCC prior to version 3.1 the compiler can't be
    trusted not to inline if it is static. */
 #define _NOINLINE
 #define _NOINLINE_STATIC
 #define _NORETURN
+#define _PACKED(T, ...)
 #endif
 
 #endif /* _ANSIDECL_H_ */
