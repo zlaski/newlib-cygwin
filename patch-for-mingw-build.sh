@@ -12,13 +12,20 @@ CYAN=$ESC[96m
 WHITE=$ESC[97m
 DEFAULT=$ESC[0m
 
-SCRIPT=`basename "$0"`
+SCRIPT=`basename "$0" .sh`
+
+"$(dirname $COMSPEC)/net" session 1>/dev/null 2>&1
+if [ $? -ne 0 ]; then
+    echo "${RED}${SCRIPT}: Must be run with Administrator privileges${DEFAULT}"
+    exit 1
+fi
 
 if [[ "$MSYSTEM" != "MINGW64" ]]; then
     echo "${RED}${SCRIPT}: Must use Mingw64 build environment${DEFAULT}"
 	exit 1
 fi
 
+set -x
 cd /
 rm -rf /var/lib/pacman
 mkdir -p /var/lib/pacman
@@ -47,5 +54,7 @@ pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
 
 curl -k https://raw.githubusercontent.com/git-for-windows/git-sdk-64/main/etc/pacman.conf -o /etc/pacman.conf
 pacman --noconfirm --overwrite "*" -Syyuu
-pacman --noconfirm --overwrite "*" -S base-devel mingw-w64-x86_64-toolchain
+pacman --noconfirm --overwrite "*" -S base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain
 pacman --noconfirm --overwrite "*" -S autotools curl gtk-doc texinfo
+
+set +x
