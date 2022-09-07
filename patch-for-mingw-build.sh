@@ -55,6 +55,6 @@ pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
 curl -k https://raw.githubusercontent.com/git-for-windows/git-sdk-64/main/etc/pacman.conf -o /etc/pacman.conf
 pacman --noconfirm --overwrite "*" -Syyuu
 pacman --noconfirm --overwrite "*" -S base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain
-pacman --noconfirm --overwrite "*" -S autotools curl gtk-doc texinfo
+pacman --noconfirm --overwrite "*" -S autotools curl gtk-doc texinfo cmake
 
 set +x
