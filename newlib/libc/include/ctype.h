@@ -57,14 +57,14 @@ extern int isascii_l (int __c, locale_t __l);
 extern int toascii_l (int __c, locale_t __l);
 #endif
 
-#define	_U	01
-#define	_L	02
-#define	_N	04
-#define	_S	010
-#define _P	020
-#define _C	040
-#define _X	0100
-#define	_B	0200
+#define _CTYPE_U	01
+#define _CTYPE_L	02
+#define _CTYPE_D	04
+#define _CTYPE_S	010
+#define _CTYPE_P	020
+#define _CTYPE_C	040
+#define _CTYPE_X	0100
+#define _CTYPE_B	0200
 
 /* For C++ backward-compatibility only.  */
 extern	__IMPORT const char	_ctype_[];
@@ -89,22 +89,22 @@ const char *__locale_ctype_ptr (void);
    an out-of-bounds reference on a 64-bit machine.  */
 #define __ctype_lookup(__c) ((__CTYPE_PTR+sizeof(""[__c]))[(int)(__c)])
 
-#define	isalpha(__c)	(__ctype_lookup(__c)&(_U|_L))
-#define	isupper(__c)	((__ctype_lookup(__c)&(_U|_L))==_U)
-#define	islower(__c)	((__ctype_lookup(__c)&(_U|_L))==_L)
-#define	isdigit(__c)	(__ctype_lookup(__c)&_N)
-#define	isxdigit(__c)	(__ctype_lookup(__c)&(_X|_N))
-#define	isspace(__c)	(__ctype_lookup(__c)&_S)
-#define ispunct(__c)	(__ctype_lookup(__c)&_P)
-#define isalnum(__c)	(__ctype_lookup(__c)&(_U|_L|_N))
-#define isprint(__c)	(__ctype_lookup(__c)&(_P|_U|_L|_N|_B))
-#define	isgraph(__c)	(__ctype_lookup(__c)&(_P|_U|_L|_N))
-#define iscntrl(__c)	(__ctype_lookup(__c)&_C)
+#define	isalpha(__c)	(__ctype_lookup(__c)&(_CTYPE_U|_CTYPE_L))
+#define	isupper(__c)	((__ctype_lookup(__c)&(_CTYPE_U|_CTYPE_L))==_CTYPE_U)
+#define	islower(__c)	((__ctype_lookup(__c)&(_CTYPE_U|_CTYPE_L))==_CTYPE_L)
+#define	isdigit(__c)	(__ctype_lookup(__c)&_CTYPE_D)
+#define	isxdigit(__c)	(__ctype_lookup(__c)&(_CTYPE_X|_CTYPE_D))
+#define	isspace(__c)	(__ctype_lookup(__c)&_CTYPE_S)
+#define ispunct(__c)	(__ctype_lookup(__c)&_CTYPE_P)
+#define isalnum(__c)	(__ctype_lookup(__c)&(_CTYPE_U|_CTYPE_L|_CTYPE_D))
+#define isprint(__c)	(__ctype_lookup(__c)&(_CTYPE_P|_CTYPE_U|_CTYPE_L|_CTYPE_D|_CTYPE_B))
+#define	isgraph(__c)	(__ctype_lookup(__c)&(_CTYPE_P|_CTYPE_U|_CTYPE_L|_CTYPE_D))
+#define iscntrl(__c)	(__ctype_lookup(__c)&_CTYPE_C)
 
 #if defined(__GNUC__) && __ISO_C_VISIBLE >= 1999
 #define isblank(__c) \
   __extension__ ({ __typeof__ (__c) __x = (__c);		\
-        (__ctype_lookup(__x)&_B) || (int) (__x) == '\t';})
+        (__ctype_lookup(__x)&_CTYPE_B) || (int) (__x) == '\t';})
 #endif
 
 #if __POSIX_VISIBLE >= 200809
@@ -120,22 +120,22 @@ __locale_ctype_ptr_l(locale_t _l)
 #endif
 #define __ctype_lookup_l(__c,__l) ((__locale_ctype_ptr_l(__l)+sizeof(""[__c]))[(int)(__c)])
 
-#define	isalpha_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_U|_L))
-#define	isupper_l(__c,__l)	((__ctype_lookup_l(__c,__l)&(_U|_L))==_U)
-#define	islower_l(__c,__l)	((__ctype_lookup_l(__c,__l)&(_U|_L))==_L)
-#define	isdigit_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_N)
-#define	isxdigit_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_X|_N))
-#define	isspace_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_S)
-#define ispunct_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_P)
-#define isalnum_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_U|_L|_N))
-#define isprint_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_P|_U|_L|_N|_B))
-#define	isgraph_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_P|_U|_L|_N))
-#define iscntrl_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_C)
+#define	isalpha_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_CTYPE_U|_CTYPE_L))
+#define	isupper_l(__c,__l)	((__ctype_lookup_l(__c,__l)&(_CTYPE_U|_CTYPE_L))==_CTYPE_U)
+#define	islower_l(__c,__l)	((__ctype_lookup_l(__c,__l)&(_CTYPE_U|_CTYPE_L))==_CTYPE_L)
+#define	isdigit_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_CTYPE_D)
+#define	isxdigit_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_CTYPE_X|_CTYPE_D))
+#define	isspace_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_CTYPE_S)
+#define ispunct_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_CTYPE_P)
+#define isalnum_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_CTYPE_U|_CTYPE_L|_CTYPE_D))
+#define isprint_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_CTYPE_P|_CTYPE_U|_CTYPE_L|_CTYPE_D|_CTYPE_B))
+#define	isgraph_l(__c,__l)	(__ctype_lookup_l(__c,__l)&(_CTYPE_P|_CTYPE_U|_CTYPE_L|_CTYPE_D))
+#define iscntrl_l(__c,__l)	(__ctype_lookup_l(__c,__l)&_CTYPE_C)
 
 #if defined(__GNUC__)
 #define isblank_l(__c, __l) \
   __extension__ ({ __typeof__ (__c) __x = (__c);		\
-        (__ctype_lookup_l(__x,__l)&_B) || (int) (__x) == '\t';})
+        (__ctype_lookup_l(__x,__l)&_CTYPE_B) || (int) (__x) == '\t';})
 #endif
 
 #endif /* __POSIX_VISIBLE >= 200809 */

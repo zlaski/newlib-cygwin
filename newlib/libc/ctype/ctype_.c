@@ -35,22 +35,22 @@ static char sccsid[] = "@(#)ctype_.c	5.6 (Berkeley) 6/1/90";
 #include "../locale/setlocale.h"
 
 #define _CTYPE_DATA_0_127 \
-	_C,	_C,	_C,	_C,	_C,	_C,	_C,	_C, \
-	_C,	_C|_S, _C|_S, _C|_S,	_C|_S,	_C|_S,	_C,	_C, \
-	_C,	_C,	_C,	_C,	_C,	_C,	_C,	_C, \
-	_C,	_C,	_C,	_C,	_C,	_C,	_C,	_C, \
-	_S|_B,	_P,	_P,	_P,	_P,	_P,	_P,	_P, \
-	_P,	_P,	_P,	_P,	_P,	_P,	_P,	_P, \
-	_N,	_N,	_N,	_N,	_N,	_N,	_N,	_N, \
-	_N,	_N,	_P,	_P,	_P,	_P,	_P,	_P, \
-	_P,	_U|_X,	_U|_X,	_U|_X,	_U|_X,	_U|_X,	_U|_X,	_U, \
-	_U,	_U,	_U,	_U,	_U,	_U,	_U,	_U, \
-	_U,	_U,	_U,	_U,	_U,	_U,	_U,	_U, \
-	_U,	_U,	_U,	_P,	_P,	_P,	_P,	_P, \
-	_P,	_L|_X,	_L|_X,	_L|_X,	_L|_X,	_L|_X,	_L|_X,	_L, \
-	_L,	_L,	_L,	_L,	_L,	_L,	_L,	_L, \
-	_L,	_L,	_L,	_L,	_L,	_L,	_L,	_L, \
-	_L,	_L,	_L,	_P,	_P,	_P,	_P,	_C
+	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C, \
+	_CTYPE_C,	_CTYPE_C|_CTYPE_S, _CTYPE_C|_CTYPE_S, _CTYPE_C|_CTYPE_S,	_CTYPE_C|_CTYPE_S,	_CTYPE_C|_CTYPE_S,	_CTYPE_C,	_CTYPE_C, \
+	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C, \
+	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C,	_CTYPE_C, \
+	_CTYPE_S|_CTYPE_B,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P, \
+	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P, \
+	_CTYPE_D,	_CTYPE_D,	_CTYPE_D,	_CTYPE_D,	_CTYPE_D,	_CTYPE_D,	_CTYPE_D,	_CTYPE_D, \
+	_CTYPE_D,	_CTYPE_D,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P, \
+	_CTYPE_P,	_CTYPE_U|_CTYPE_X,	_CTYPE_U|_CTYPE_X,	_CTYPE_U|_CTYPE_X,	_CTYPE_U|_CTYPE_X,	_CTYPE_U|_CTYPE_X,	_CTYPE_U|_CTYPE_X,	_CTYPE_U, \
+	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U, \
+	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_U, \
+	_CTYPE_U,	_CTYPE_U,	_CTYPE_U,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P, \
+	_CTYPE_P,	_CTYPE_L|_CTYPE_X,	_CTYPE_L|_CTYPE_X,	_CTYPE_L|_CTYPE_X,	_CTYPE_L|_CTYPE_X,	_CTYPE_L|_CTYPE_X,	_CTYPE_L|_CTYPE_X,	_CTYPE_L, \
+	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L, \
+	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_L, \
+	_CTYPE_L,	_CTYPE_L,	_CTYPE_L,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_P,	_CTYPE_C
 
 #define _CTYPE_DATA_128_255 \
 	0,	0,	0,	0,	0,	0,	0,	0, \
