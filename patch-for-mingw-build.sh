@@ -13,6 +13,7 @@ WHITE=$ESC[97m
 DEFAULT=$ESC[0m
 
 SCRIPT=`basename "$0" .sh`
+export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
 
 "$(dirname $COMSPEC)/net" session 1>/dev/null 2>&1
 if [ $? -ne 0 ]; then
@@ -54,7 +55,13 @@ pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
 
 curl -k https://raw.githubusercontent.com/git-for-windows/git-sdk-64/main/etc/pacman.conf -o /etc/pacman.conf
 pacman --noconfirm --overwrite "*" -Syyuu
-pacman --noconfirm --overwrite "*" -S base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain
-pacman --noconfirm --overwrite "*" -S autotools curl gtk-doc texinfo cmake
+
+pacman --noconfirm --overwrite "*" -S ca-certificates
+pacman --noconfirm --overwrite "*" -S gnupg
+pacman --noconfirm --overwrite "*" -S base-devel
+
+pacman --noconfirm --overwrite "*" -S mingw-w64-i686-toolchain
+pacman --noconfirm --overwrite "*" -S mingw-w64-x86_64-toolchain
+pacman --noconfirm --overwrite "*" -S autotools cmake
 
 set +x

@@ -18,9 +18,11 @@ SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
 
+export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
+
 rm -rf .build
 mkdir -p .build/build .build/install
-LOG="$CYGSRCROOT/.build/build-cygwin.log"
+LOG="$CYGSRCROOT/.build/$SCRIPT.log"
 
 echo ${GREEN}${SCRIPT}: Building newlib-cygwin . . .${DEFAULT}
 echo ${GREEN}Writing log to ${LOG} . . .${DEFAULT}
@@ -59,7 +61,7 @@ echo ${GREEN}=====================================================${DEFAULT}
     set +x
 
     echo =====================================================
-    echo Finished building native-cygwin.
+    echo Finished building $SCRIPT.
 
 } 2>&1 | tee $LOG
 

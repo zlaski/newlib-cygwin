@@ -18,9 +18,11 @@ SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
 
+export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
+
 rm -rf .build
 mkdir -p .build/build .build/install
-LOG="$CYGSRCROOT/.build/build-cygwin.log"
+LOG="$CYGSRCROOT/.build/$SCRIPT.log"
 
 echo ${GREEN}${SCRIPT}: Building newlib-cygwin . . .${DEFAULT}
 echo ${GREEN}Writing log to ${LOG} . . .${DEFAULT}
@@ -33,6 +35,21 @@ echo ${GREEN}=====================================================${DEFAULT}
 
     set -x
 
+    export CC=/bin/x86_64-w64-mingw32-gcc 
+    export CXX=/bin/x86_64-w64-mingw32-c++
+    export GCC=/bin/x86_64-w64-mingw32-gcc
+
+    export AR=/usr/x86_64-w64-mingw32/bin/ar
+    export AS=/usr/x86_64-w64-mingw32/bin/as
+    export DLLTOOL=/usr/x86_64-w64-mingw32/bin/dlltool
+    export LD=/usr/x86_64-w64-mingw32/bin/ld
+    export NM=/usr/x86_64-w64-mingw32/bin/nm
+    export OBJCOPY=/usr/x86_64-w64-mingw32/bin/objcopy
+    export OBJDUMP=/usr/x86_64-w64-mingw32/bin/objdump
+    export RANLIB=/usr/x86_64-w64-mingw32/bin/ranlib
+    export READELF=/usr/x86_64-w64-mingw32/bin/readelf
+    export STRIP=/usr/x86_64-w64-mingw32/bin/strip
+    
     cd "$CYGSRCROOT/winsup"
     SHELL='/bin/sh -x' autoreconf || exit 1
     SHELL='/bin/sh -x' ./autogen.sh
@@ -44,7 +61,7 @@ echo ${GREEN}=====================================================${DEFAULT}
     set +x
 
     echo =====================================================
-    echo Finished building native-cygwin.
+    echo Finished $SCRIPT.
 
 } 2>&1 | tee $LOG
 
