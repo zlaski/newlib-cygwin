@@ -18,7 +18,7 @@ SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
 
-export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
+# export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
 
 rm -rf .build
 mkdir -p .build/build .build/install
@@ -38,6 +38,7 @@ echo ${GREEN}=====================================================${DEFAULT}
     export CC=/mingw64/bin/x86_64-w64-mingw32-cc
     export CXX=/mingw64/bin/x86_64-w64-mingw32-c++
     export GCC=/mingw64/bin/x86_64-w64-mingw32-gcc
+    export CPP=/mingw64/bin/x86_64-w64-mingw32-cpp
 
     export AR=/mingw64/x86_64-w64-mingw32/bin/ar
     export AS=/mingw64/x86_64-w64-mingw32/bin/as

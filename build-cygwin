@@ -18,7 +18,7 @@ SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
 
-export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
+# export PS4="${BLUE}$0:$LINENO:${DEFAULT} "
 
 rm -rf .build
 mkdir -p .build/build .build/install
@@ -38,6 +38,7 @@ echo ${GREEN}=====================================================${DEFAULT}
     export CC=/bin/x86_64-w64-mingw32-gcc 
     export CXX=/bin/x86_64-w64-mingw32-c++
     export GCC=/bin/x86_64-w64-mingw32-gcc
+    export CPP=/bin/x86_64-w64-mingw32-cpp
 
     export AR=/usr/x86_64-w64-mingw32/bin/ar
     export AS=/usr/x86_64-w64-mingw32/bin/as
@@ -49,7 +50,7 @@ echo ${GREEN}=====================================================${DEFAULT}
     export RANLIB=/usr/x86_64-w64-mingw32/bin/ranlib
     export READELF=/usr/x86_64-w64-mingw32/bin/readelf
     export STRIP=/usr/x86_64-w64-mingw32/bin/strip
-    
+
     cd "$CYGSRCROOT/winsup"
     SHELL='/bin/sh -x' autoreconf || exit 1
     SHELL='/bin/sh -x' ./autogen.sh
