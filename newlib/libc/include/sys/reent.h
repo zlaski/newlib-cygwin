@@ -201,7 +201,7 @@ struct __sFILE {
 #include <sys/custom_file.h>
 
 #else /* !__CUSTOM_FILE_IO__ */
-#ifdef __LARGE64_FILES
+#if defined __LARGE64_FILES || defined __MINGW32__
 struct __sFILE64 {
   unsigned char *_p;	/* current position in (some) buffer */
   int	_r;		/* read space left for getc() */

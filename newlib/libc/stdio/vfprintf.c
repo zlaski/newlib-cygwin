@@ -1163,7 +1163,7 @@ reswitch:	switch (ch) {
 
 				memset ((void *)&ps, '\0', sizeof (mbstate_t));
 				if ((size = (int)_wcrtomb_r (data, cp,
-					       (wchar_t)GET_ARG (N, ap, wint_t),
+					       (wchar_t)GET_ARG (N, ap, int),
 						&ps)) == -1) {
 					fp->_flags |= __SERR;
 					goto error;
@@ -2244,7 +2244,7 @@ get_arg (struct _reent *data,
 			args[numargs++].val_quad_t = va_arg (*ap, quad_t);
 			break;
 		      case WIDE_CHAR:
-			args[numargs++].val_wint_t = va_arg (*ap, wint_t);
+			args[numargs++].val_wint_t = (wint_t)va_arg (*ap, int);
 			break;
 		      case INT:
 			args[numargs++].val_int = va_arg (*ap, int);
@@ -2327,7 +2327,7 @@ get_arg (struct _reent *data,
 	  args[numargs++].val__LONG_DOUBLE = va_arg (*ap, _LONG_DOUBLE);
 	  break;
 	case WIDE_CHAR:
-	  args[numargs++].val_wint_t = va_arg (*ap, wint_t);
+	  args[numargs++].val_wint_t = (wint_t)va_arg (*ap, int);
 	  break;
 	case INT:
 	default:

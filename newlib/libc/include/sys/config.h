@@ -220,6 +220,10 @@
 #endif
 /* End of block that should be kept in sync with GCC's limits.h.  */
 
+#ifdef __MINGW64__
+#define _POINTER_INT long long
+#endif
+
 #ifndef _POINTER_INT
 #define _POINTER_INT long
 #endif

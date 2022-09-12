@@ -262,7 +262,7 @@ eval_as_double (double x)
 #endif
 
 /* gcc emitting PE/COFF doesn't support visibility */
-#if defined (__GNUC__) && !defined (__CYGWIN__)
+#if defined (__GNUC__) && !defined (__CYGWIN__) && !defined (__MINGW32__)
 # define HIDDEN __attribute__ ((__visibility__ ("hidden")))
 #else
 # define HIDDEN

@@ -181,7 +181,7 @@ extern "C" {
 
 /*#include <sys/stdtypes.h>*/
 
-#ifndef __CYGWIN__
+#if !defined(__CYGWIN__) && !defined(__MINGW32__)
 /* file segment locking set data type - information passed to system by user */
 struct flock {
 	short	l_type;		/* F_RDLCK, F_WRLCK, or F_UNLCK */

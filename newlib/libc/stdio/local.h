@@ -184,7 +184,7 @@ extern void   __smakebuf_r (struct _reent *, FILE *);
 extern int    __swhatbuf_r (struct _reent *, FILE *, size_t *, int *);
 extern int __submore (struct _reent *, FILE *);
 
-#ifdef __LARGE64_FILES
+#if defined(__LARGE64_FILES) || defined(__MINGW32__)
 extern _fpos64_t __sseek64 (struct _reent *, void *, _fpos64_t, int);
 extern _READ_WRITE_RETURN_TYPE __swrite64 (struct _reent *, void *,
 						  const char *,

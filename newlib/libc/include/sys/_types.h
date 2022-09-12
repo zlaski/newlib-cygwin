@@ -117,7 +117,7 @@ typedef long _fpos_t;		/* XXX must match off_t in <sys/types.h> */
 				/* (and must be `long' for now) */
 #endif
 
-#ifdef __LARGE64_FILES
+#if defined(__LARGE64_FILES) || defined(__MINGW32__)
 #ifndef __machine_fpos64_t_defined
 typedef _off64_t _fpos64_t;
 #endif
