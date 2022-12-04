@@ -4,6 +4,18 @@
     <Import Project="$(SolutionDir)akibld-lib.props" />
   </ImportGroup>
   <ItemGroup>
+    <None Include="newlib-cygwin.bat" />
+    <None Include="newlib-cygwin.lst" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\svn\akibld\src\akisystems\akibld\akibld-headers.vcxproj">
+      <Project>{07fa51f2-cd6f-400f-8821-ebfe0040f2d6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mingw-w64\mingw-w64.vcxproj">
+      <Project>{21c327f4-e40f-4971-8473-03c96994091e}</Project>
+    </ProjectReference>
     <ProjectReference Include="newlib\libc\libc.vcxproj">
       <Project>{2edcb7b7-2d1e-4bd4-8e6a-5ed9d5e8719e}</Project>
     </ProjectReference>
@@ -18,13 +30,14 @@
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
-    <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{181FBFF6-0EA2-4BE4-8618-6B44F6EAADE2}</ProjectGuid>
-    <RootNamespace>cygwin</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{28FA61AF-1E01-4ACB-B5EA-FE81966F7F8F}</ProjectGuid>
+    <RootNamespace>newlib-cygwin</RootNamespace>
+    <ProjectName>newlib-cygwin</ProjectName>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Command>newlib-cygwin.bat "$(OutDir)"</Command>
+      <Message>Installing NEWLIB-CYGWIN headers . . .</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
 </Project>

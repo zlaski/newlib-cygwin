@@ -1,0 +1,13 @@
+include\ansidecl.h
+include\demangle.h
+include\dyn-string.h
+include\fibheap.h
+include\floatformat.h
+include\hashtab.h
+include\libiberty.h
+include\objalloc.h
+include\partition.h
+include\safe-ctype.h
+include\sort.h
+include\splay-tree.h
+include\timeval-utils.h
