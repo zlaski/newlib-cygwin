@@ -3,52 +3,8 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="$(SolutionDir)akibld-lib.props" />
   </ImportGroup>
-  <ItemGroup>
-    <ProjectReference Include="cygserver\libcygserver.vcxproj">
-      <Project>{079a0dd5-d31a-41d9-b4d5-54d04a7e7a31}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\lib\liblib.vcxproj">
-      <Project>{490836c3-5827-478e-9a40-487081cb406b}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libautomode.vcxproj">
-      <Project>{0e9b9d71-ee22-4e88-8f50-3f895e138e92}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libbinmode.vcxproj">
-      <Project>{85e83033-543c-438e-b0fc-eb94c0c3938d}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libdll.vcxproj">
-      <Project>{a8fe8653-f3f4-43a0-83c9-8f90642c02f5}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libgmon.vcxproj">
-      <Project>{ad8a743a-ba5c-4819-a4ec-1877d79bcebb}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libtextmode.vcxproj">
-      <Project>{0e8fd8f3-3320-4a74-9d3f-8bf5af14c393}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\libtextreadmode.vcxproj">
-      <Project>{ba10e609-59b3-48e5-a259-d100afab31f5}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\math\libmath.vcxproj">
-      <Project>{0a975c05-ac55-4328-946c-d89aa6e98a45}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\regex\libregex.vcxproj">
-      <Project>{283932ea-6be0-49f3-88d1-2e278feeaddb}</Project>
-    </ProjectReference>
-    <ProjectReference Include="cygwin\tzcode\libtzcode.vcxproj">
-      <Project>{6f8ee20a-0f61-44dd-9306-0c48f9c32e2c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="testsuite\libltp\libltp.vcxproj">
-      <Project>{0ed379cf-649b-4bc8-b0b3-87a7a1b6679c}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
-    <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{45EC07B8-747C-47E2-BDE1-58CC25A4EDA7}</ProjectGuid>
     <RootNamespace>winsup</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
