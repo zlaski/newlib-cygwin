@@ -17,16 +17,25 @@ DEFAULT=$ESC[0m
 SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
+INST="$CYGSRCROOT/.install"
+
+rm -rf $INST
+mkdir $INST
 
 build_proj()
 {
     cd $1
-    rm -f configure configure~ Makefile
+    PROJROOT=$PWD
+    rm -f configure configure~ config.status
     SHELL='/bin/sh -x' autoreconf -v || exit 1
     SHELL='/bin/sh -x' ./autogen.sh
-    SHELL='/bin/sh -x' ./configure --disable-silent-rules --disable-doc --prefix="$CYGSRCROOT/.install"
+    rm -rf .build
+    mkdir .build
+    cd .build
+    SHELL='/bin/sh -x' $PROJROOT/configure --disable-silent-rules --disable-doc --prefix=$INST
     make SHELL='/bin/sh -x'
     make install SHELL='/bin/sh -x'
+    cd $1
 }
 
 if [[ "$OSTYPE" != "cygwin" ]]; then
@@ -36,7 +45,7 @@ fi
 
 rm -rf .build
 mkdir -p .build
-LOG="$CYGSRCROOT/.build/build-cygwin.log"
+LOG=$INST/build-cygwin.log
 
 echo ${GREEN}${SCRIPT}: Building newlib-cygwin . . .${DEFAULT}
 echo ${GREEN}Writing log to ${LOG} . . .${DEFAULT}
@@ -48,6 +57,8 @@ echo ${GREEN}=====================================================${DEFAULT}
     echo =====================================================
 
     set -x
+    
+    find-file Makefile | xargs rm -f
 
     build_proj "$CYGSRCROOT/winsup"
     build_proj "$CYGSRCROOT"
