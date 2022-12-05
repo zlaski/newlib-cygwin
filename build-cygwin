@@ -18,8 +18,24 @@ SCRIPT="`basename "$0"`"
 cd "`dirname "$0"`"
 CYGSRCROOT="$PWD"
 
+build_proj()
+{
+    cd $1
+    rm -f configure configure~ Makefile
+    SHELL='/bin/sh -x' autoreconf -v || exit 1
+    SHELL='/bin/sh -x' ./autogen.sh
+    SHELL='/bin/sh -x' ./configure --disable-silent-rules --disable-doc --prefix="$CYGSRCROOT/.install"
+    make SHELL='/bin/sh -x'
+    make install SHELL='/bin/sh -x'
+}
+
+if [[ "$OSTYPE" != "cygwin" ]]; then
+    echo ${RED}${SCRIPT}: Script must be run under Cygwin${DEFAULT}
+    exit 1
+fi
+
 rm -rf .build
-mkdir -p .build/build .build/install
+mkdir -p .build
 LOG="$CYGSRCROOT/.build/build-cygwin.log"
 
 echo ${GREEN}${SCRIPT}: Building newlib-cygwin . . .${DEFAULT}
@@ -33,13 +49,8 @@ echo ${GREEN}=====================================================${DEFAULT}
 
     set -x
 
-    cd "$CYGSRCROOT/winsup"
-    SHELL='/bin/sh -x' autoreconf || exit 1
-    SHELL='/bin/sh -x' ./autogen.sh
-    cd "$CYGSRCROOT/.build/build"
-    SHELL='/bin/sh -x' "$CYGSRCROOT/configure" --disable-doc --prefix="$CYGSRCROOT/.build/install"
-    make SHELL='/bin/sh -x'
-    make install SHELL='/bin/sh -x'
+    build_proj "$CYGSRCROOT/winsup"
+    build_proj "$CYGSRCROOT"
 
     set +x
 
