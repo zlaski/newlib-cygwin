@@ -1,0 +1,30 @@
+#!/bin/bash -x
+
+DATESTAMP=$(dt)
+LOGFILE=$TMP/$(basename "$0").$DATESTAMP.log
+
+pushd `dirname "$0"`
+NEWLIB_ROOT=`pwd`
+
+export CFLAGS="-O0 -g3"
+export CXXFLAGS="-O0 -g3"
+
+{
+
+    rm -rf build install
+    mkdir build install
+
+    cd winsup
+    ./autogen.sh
+
+    cd ../build
+    ../configure --prefix=$NEWLIB_ROOT/install --disable-dumper --disable-doc
+
+    make
+    make install
+    
+} 2>&1 | tee $LOGFILE
+
+popd
+
+echo Log in $LOGFILE
